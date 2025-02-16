@@ -4,7 +4,7 @@
     To design and analyse a Common Source Amplifier using a 180nm MOSFET and perform DC, Transient and AC analysis in LT Spice.
  
  ### Specifications
-         180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
+     180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
 
  ### Question 1
  ### Analysis of CS Amplifier with Resistive load circuit. 
