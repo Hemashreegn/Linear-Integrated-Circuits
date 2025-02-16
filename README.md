@@ -49,7 +49,7 @@
    4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
 
    #### Result
-      ![IMG-20250217-WA0000.jpg](https://github.com/user-attachments/assets/a9f90c76-d5d6-41e0-84c6-fd06138fcf1f)
+   ![IMG-20250217-WA0000.jpg](https://github.com/user-attachments/assets/a9f90c76-d5d6-41e0-84c6-fd06138fcf1f)   
 
          
    The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
