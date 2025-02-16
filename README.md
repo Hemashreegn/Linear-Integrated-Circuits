@@ -1,4 +1,6 @@
- # A Linear-Integrated-Circuits
+ # Linear-Integrated-Circuits
+ 
+ ## Experiment - 01
 
  ## Aim
     To design and analyse a Common Source Amplifier using a 180nm MOSFET and perform DC, Transient and AC analysis in LT Spice.
