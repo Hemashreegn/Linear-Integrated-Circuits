@@ -72,21 +72,21 @@
 ## AC Analysis 
   
  #### Objective 
-    To determine voltage gain and frequency response.
+  To determine voltage gain and frequency response.
 
  #### Procedure 
 
-    1.Perform AC analysis with an input of 50mV AC.
-    2.Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
-    3.Then run the simulation.(.ac dec 100 0.1 1T)
+  1.Perform AC analysis with an input of 50mV AC.
+  2.Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
+  3.Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
  ![IMG-20250217-WA0004.jpg](https://github.com/user-attachments/assets/057b03ac-a933-47be-96d0-f594b9e743bd)
 
 
-  - The obtained gain is, **Av= -34dB**.
-  - The 3dB frequency found was 
-  - The Bandwidth obtained is 
+- The obtained gain is, **Av= -34dB**.
+- The 3dB frequency found was 
+- The Bandwidth obtained is 
 
 ## Inference 
 
