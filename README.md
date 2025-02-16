@@ -81,7 +81,7 @@
   3. Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
- ![IMG-20250217-WA0004.jpg](https://github.com/user-attachments/assets/057b03ac-a933-47be-96d0-f594b9e743bd)
+ ![IMG_20250217_012703.jpg](https://github.com/user-attachments/assets/a650c1dc-ad64-48dd-bef7-1b5c7d75a0ef)
 
 
 - The obtained gain is, **Av= -34dB**.
