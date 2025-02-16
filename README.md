@@ -1,13 +1,10 @@
-# A Linear-Integrated-Circuits
+ # A Linear-Integrated-Circuits
 
  ## Aim
- Analysis of a CS Amplifier using LT Spice. 
+    To design and analyse a Common Source Amplifier using a 180nm MOSFET and perform DC, Transient and AC analysis in LT Spice.
  
- Specifications: 180nm, tsmc, Vdd=1.8V, Vg=0.9V, Power=100uW.
-
- Analysis: DC analysis, Transient analysis, AC analysis. 
-
- ## 
+ ### Specifications
+         180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
 
  ### Question 1
  ### Analysis of CS Amplifier with Resistive load circuit. 
@@ -31,6 +28,42 @@
 
  #### 3.Biasing 
    Input signal source of 0.9V, **V1** to gate of **M1**. 
+ 
+ #### 4.Calculations
+     **Drain current(Id)** = 5.55 × 10^-5 A (calculated using P = V×I)
+
+     **Resistor** = 2.764k ohms (calculated using Vout=Vdd -(Id×Rd))
+
+## DC Analysis 
+
+   #### Objective 
+           To determine the operating point of the MOSFET.
+
+   #### Procedure
+           
+           1. Set up the circuit in the Spice.
+           2. Attach the tsmc018.lib library file to the 180nm MOSFET.
+           3. Perform a DC operating point(DC op pnt) analysis.
+           4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
+
+   #### Observations
+           
+           • The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
+
+## Transient Analysis 
+
+   #### Objective 
+           To analyse the output waveforms to an input signal and 
+
+   #### Procedure 
+      
+           1. Apply a sinusoidal input signal of 50mV at 1kHz.
+           2. Perform a Transient Analysis in LT Spice.
+           3. 
+         
+      
+    
+   
 
   
  
