@@ -64,7 +64,7 @@
    2. Perform a Transient Analysis by setting up stop time as 3ms, start time as 0 and run.(.tran 0 3m 0)
 
   #### Result
-  ![IMG-20250217-WA0003.jpg](https://github.com/user-attachments/assets/3e84d5ee-e17d-4b66-93fc-695315c69d51)
+  ![IMG_20250217_012513.jpg](https://github.com/user-attachments/assets/38967def-a49d-4155-888e-eff9f4d63404)
 
 
    We can observe the **180° phase shift** between the input and output signal.
