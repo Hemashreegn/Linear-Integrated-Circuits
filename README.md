@@ -1,6 +1,6 @@
- # Linear-Integrated-Circuits
+ # **Linear-Integrated-Circuits**
  
- ## Experiment - 01
+ ## **Experiment - 01**
 
  ## Aim
   To design and analyse a Common Source Amplifier using a 180nm MOSFET and perform DC, Transient and AC analysis in LT Spice.
@@ -48,7 +48,9 @@
    3. Perform a DC operating point(DC op pnt) analysis.
    4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
 
-   #### Observations
+   #### Result
+      ![IMG-20250217-WA0000.jpg](https://github.com/user-attachments/assets/a9f90c76-d5d6-41e0-84c6-fd06138fcf1f)
+
          
    The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
 
