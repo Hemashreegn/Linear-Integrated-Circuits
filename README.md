@@ -32,36 +32,36 @@
    Input signal source of 0.9V, **V1** to gate of **M1**. 
  
  #### **4.Calculations**
-     **Drain current(Id)** = 5.55 × 10^-5 A (calculated using P = V×I)
+   **Drain current(Id)** = 5.55 × 10^-5 A (calculated using P = V×I)
 
-     **Resistor** = 2.764k ohms (calculated using Vout=Vdd -(Id×Rd))
+   **Resistor** = 2.764k ohms (calculated using Vout=Vdd -(Id×Rd))
 
 ## DC Analysis 
 
-   #### Objective 
-           To determine the operating point of the MOSFET.
+  #### Objective 
+   To determine the operating point of the MOSFET.
 
-   #### Procedure
+  #### Procedure
            
-           1. Set up the circuit in the Spice.
-           2. Attach the tsmc018.lib library file to the 180nm MOSFET.
-           3. Perform a DC operating point(DC op pnt) analysis.
-           4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
+   1. Set up the circuit in the Spice.
+   2. Attach the tsmc018.lib library file to the 180nm MOSFET.
+   3. Perform a DC operating point(DC op pnt) analysis.
+   4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
 
    #### Observations
-           
-           The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
+         
+   The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
 
 ## Transient Analysis 
 
-   #### Objective 
-           To analyse the output waveforms to an input signal and 
+ #### Objective 
+   To analyse the output waveforms to an input signal and 
 
-   #### Procedure 
+ #### Procedure 
       
-           1. Apply a sinusoidal input signal of 50mV at 1kHz.
-           2. Perform a Transient Analysis in LT Spice.
-           3. 
+   1. Apply a sinusoidal input signal of 50mV at 1kHz.
+   2. Perform a Transient Analysis in LT Spice.
+   3. 
          
       
     
