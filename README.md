@@ -13,17 +13,17 @@
 
  #### Components Required 
 
-**• NMOS Transistor** : **M1**(nmos4) 
-**• Resistor** : **R**(1k ohm) 
-**• Power supply** : **V2**(Vdd = 1.8V) 
-**• Input signal source** : **V1**(Vg = 0.9V) 
+- **NMOS Transistor** : **M1**(nmos4) 
+- **Resistor** : **R**(1k ohm) 
+- **Power supply** : **V2**(Vdd = 1.8V) 
+- **Input signal source** : **V1**(Vg = 0.9V) 
 
  #### Circuit Diagram 
 
  #### 1.Transistor setup 
-  • Select nmos4 transistor from the library and place it i.e., **M1**
-  • Connect source of **M1** to ground. 
-  • Connect drain of **M1** to one terminal of resistor. 
+  -Select nmos4 transistor from the library and place it i.e., **M1**
+  -Connect source of **M1** to ground. 
+  -Connect drain of **M1** to one terminal of resistor. 
 
  #### 2.Resistor 
    Select 1k ohm resistor and place it, conect drain terminal of **M1** to one terminal of resistor and other terminal to **V2**(power supply). 
@@ -50,7 +50,7 @@
 
    #### Observations
            
-           • The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
+           The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
 
 ## Transient Analysis 
 
