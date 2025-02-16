@@ -19,6 +19,7 @@
 - **Input signal source** : **V1**(Vg = 0.9V) 
 
  ### Circuit Diagram 
+![IMG_20250217_013254.jpg](https://github.com/user-attachments/assets/3561dead-2724-4be3-87ad-47b659163859)
 
  #### **1.Transistor setup**
   - Select nmos4 transistor from the library and place it i.e., **M1**
