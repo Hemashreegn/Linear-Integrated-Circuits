@@ -25,7 +25,7 @@
   - Connect source of **M1** to ground. 
   - Connect drain of **M1** to one terminal of resistor. 
 
- #### **2.Resistor**
+ #### **2.Resistor setup**
    Select 1k ohm resistor and place it, conect drain terminal of **M1** to one terminal of resistor and other terminal to **V2**(power supply). 
 
  #### **3.Biasing**
@@ -45,25 +45,53 @@
            
    1. Set up the circuit in the Spice.
    2. Attach the tsmc018.lib library file to the 180nm MOSFET.
-   3. Perform a DC operating point(DC op pnt) analysis.
+   3. Perform a DC operating point(DC op pnt) analysis.(.op)
    4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio.
 
    #### Result
    ![IMG-20250217-WA0000.jpg](https://github.com/user-attachments/assets/a9f90c76-d5d6-41e0-84c6-fd06138fcf1f)   
 
          
-   The expected operating point (5.55×10^-5A , 1.64V) was obtained at the length=180nm and width=0.209um. 
+   The expected operating point **(5.55×10^-5A , 1.64V)** was obtained at the **length=180nm** and **width=0.209um**. 
 
 ## Transient Analysis 
 
- #### Objective 
-   To analyse the output waveforms to an input signal and 
+    #### Objective 
+   To analyse the output waveforms to an input signal.
 
- #### Procedure 
+    #### Procedure 
       
-   1. Apply a sinusoidal input signal of 50mV at 1kHz.
-   2. Perform a Transient Analysis in LT Spice.
-   3. 
+   1. Apply a sinusoidal input signal of Vg=O.9V with an amplitude of 50mV and frequency of 1kHz.
+   2. Perform a Transient Analysis by setting up stop time as 3ms, start time as 0 and run.(.tran 0 3m 0)
+
+    #### Result
+  ![IMG-20250217-WA0003.jpg](https://github.com/user-attachments/assets/3e84d5ee-e17d-4b66-93fc-695315c69d51)
+
+
+   We can observe the **180° phase shift** between the input and output signal.
+
+## AC Analysis 
+  
+     #### Objective 
+    To determine voltage gain and frequency response.
+
+     #### Procedure 
+
+    1.Perform AC analysis with an input of 50mV AC.
+    2.Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
+    3.Then run the simulation.(.ac dec 100 0.1 1T)
+
+     #### Result 
+     ![IMG-20250217-WA0004.jpg](https://github.com/user-attachments/assets/057b03ac-a933-47be-96d0-f594b9e743bd)
+
+
+   The obtained gain is, **Av= -34dB**
+ 
+ 
+    
+
+
+  
          
       
     
