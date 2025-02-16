@@ -74,7 +74,7 @@
  #### Objective 
   To determine voltage gain and frequency response.
 
-  #### Procedure 
+   #### Procedure 
 
     1.Perform AC analysis with an input of 50mV AC.
     2.Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
