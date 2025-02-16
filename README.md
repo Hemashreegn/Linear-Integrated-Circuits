@@ -102,9 +102,26 @@
  ### Question 2
  ### Analysis of nMOS CS Amplifier with Resistive load replaced by pMOS circuit.
 
+ ### Components Required 
 
+- **NMOS Transistor** : **M1**(nmos4) 
+- **PMOS Transistor** : **M2**(pmos4) 
+- **Power supply** : **V2**(Vdd = 1.8V) 
+- **Input signal source** : **V1**(Vg = 0.9V) 
 
+ ### Circuit Diagram 
 
+#### **1. NMOS setup**
+  - Select nmos4 transistor from the library and place it i.e., **M1**
+  - Connect source of **M1** to ground. 
+  - Connect drain of **M1** to source of **M2**. 
+  - Connect gate of **M1** to input signal of 0.9V.
+
+ #### **2. PMOS setup**
+  - Select pmos4 transistor from the library and place it i.e., **M2**  
+  - Connect drain of **M2** to supply voltage (Vdd). 
+  - Connect gate of **M2** to Vb(bias voltage).
+  
 
  
  
