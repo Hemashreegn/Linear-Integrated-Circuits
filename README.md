@@ -9,7 +9,7 @@
   180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
 
  ### Question 1
- ### Analysis of CS Amplifier with Resistive load circuit. 
+ ### Analysis of nMOS CS Amplifier with Resistive load circuit. 
 
  ### Components Required 
 
@@ -56,15 +56,15 @@
 
 ## Transient Analysis 
 
-    #### Objective 
+  #### Objective 
    To analyse the output waveforms to an input signal.
 
-    #### Procedure 
+  #### Procedure 
       
    1. Apply a sinusoidal input signal of Vg=O.9V with an amplitude of 50mV and frequency of 1kHz.
    2. Perform a Transient Analysis by setting up stop time as 3ms, start time as 0 and run.(.tran 0 3m 0)
 
-    #### Result
+  #### Result
   ![IMG-20250217-WA0003.jpg](https://github.com/user-attachments/assets/3e84d5ee-e17d-4b66-93fc-695315c69d51)
 
 
@@ -72,20 +72,40 @@
 
 ## AC Analysis 
   
-     #### Objective 
+   #### Objective 
     To determine voltage gain and frequency response.
 
-     #### Procedure 
+   #### Procedure 
 
     1.Perform AC analysis with an input of 50mV AC.
     2.Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
     3.Then run the simulation.(.ac dec 100 0.1 1T)
 
-     #### Result 
-     ![IMG-20250217-WA0004.jpg](https://github.com/user-attachments/assets/057b03ac-a933-47be-96d0-f594b9e743bd)
+   #### Result 
+   ![IMG-20250217-WA0004.jpg](https://github.com/user-attachments/assets/057b03ac-a933-47be-96d0-f594b9e743bd)
 
 
-   The obtained gain is, **Av= -34dB**
+   - The obtained gain is, **Av= -34dB**.
+   - The 3dB frequency found was 
+   - The Bandwidth obtained is 
+
+## Inference 
+
+- The importance of MOSFET to be in saturation region to act as linear amplifier was observed.
+
+- We can obtain the required current by altering the aspect ratio which withholds their proportionality.
+
+- We can obtain the sinusoidal waveform with visible phase shift in the input and output.
+
+- We can obtain the gain through the graph and tally it with the theoretical values.
+
+ ### Question 2
+ ### Analysis of nMOS CS Amplifier with Resistive load replaced by pMOS circuit.
+
+
+
+
+
  
  
     
