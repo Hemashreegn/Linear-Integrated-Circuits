@@ -143,6 +143,7 @@
    4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio of both **M1** and **M2**.
 
   #### Result
+  ![Image](https://github.com/user-attachments/assets/016a03c3-6afc-4a30-9c12-40a86ba97de1)
 
    The expected operating point **(5.55×10^-5A , 1.64V)**(same drain current for M1 and M2) was obtained at the **length=180nm** and **width=0.209um** of **M1**(nMOS) and **length=180nm** and **width=0.775um** of **M2**(pMOS). 
    
