@@ -87,8 +87,7 @@
 
 
 - The obtained gain is, **Av= -22dB**.
-- The 3dB frequency found was **-25dB**. 
-- The Bandwidth obtained is **61.8GHz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
+- The Bandwidth will be f_H in GHz (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
 ## Inference 
 
@@ -175,8 +174,7 @@
  ![Image](https://github.com/user-attachments/assets/a16e6e26-36cf-4154-9caa-8bb5e6b06fff)
 
 - The obtained gain is, **Av= -33.5dB**.
-- The 3dB frequency found was **-36.65dB**. 
-- The Bandwidth obtained is **82GHz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
+- The Bandwidth will be f_H in GHz (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
  ## Inference
 
