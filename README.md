@@ -8,6 +8,9 @@
  ### Specifications
   180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
 
+ ### Theory 
+ 
+
  ### Question 1
  ### Analysis of nMOS CS Amplifier with Resistive load circuit. 
 
@@ -85,9 +88,9 @@
  ![IMG_20250217_012703.jpg](https://github.com/user-attachments/assets/a650c1dc-ad64-48dd-bef7-1b5c7d75a0ef)
 
 
-- The obtained gain is, **Av= -34dB**.
-- The 3dB frequency found was 
-- The Bandwidth obtained is 
+- The obtained gain is, **Av= -22dB**.
+- The 3dB frequency found was **-25dB**. 
+- The Bandwidth obtained is **61.8Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H))
 
 ## Inference 
 
@@ -100,7 +103,7 @@
 - We can obtain the gain through the graph and tally it with the theoretical values.
 
  ### Question 2
- ### Analysis of nMOS CS Amplifier with Resistive load replaced by pMOS circuit.
+ ### Analysis of nMOS CS Amplifier with Resistive load replaced by pMOS transistor circuit.
 
  ### Components Required 
 
