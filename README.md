@@ -90,7 +90,7 @@
 
 - The obtained gain is, **Av= -22dB**.
 - The 3dB frequency found was **-25dB**. 
-- The Bandwidth obtained is **61.8Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H))
+- The Bandwidth obtained is **61.8Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
 ## Inference 
 
@@ -158,6 +158,27 @@
    2. Perform a Transient Analysis by setting up stop time as 3ms and run.(.tran 3m )
 
   #### Result
+  ![Image](https://github.com/user-attachments/assets/49fa334b-e124-4d2e-aa64-e96f2b5ccfd3)
+
+  We can observe the **180° phase shift** between the input and output signal.
+
+  ## AC Analysis 
+  
+ #### Objective 
+  To determine voltage gain and frequency response.
+
+ #### Procedure 
+
+  1. Perform AC analysis with an input of 50mV AC.
+  2. Set type of sweep to decade, number of points per decade to 100, Start frequency to 0.1Hz and Stop frequency to 1THz.
+  3. Then run the simulation.(.ac dec 100 0.1 1T)
+
+ #### Result 
+
+
+- The obtained gain is, **Av= -25.6dB**.
+- The 3dB frequency found was **-28.6dB**. 
+- The Bandwidth obtained is **82Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H))
 
   
 
