@@ -146,7 +146,20 @@
   ![Image](https://github.com/user-attachments/assets/016a03c3-6afc-4a30-9c12-40a86ba97de1)
 
    The expected operating point **(5.55×10^-5A , 1.64V)**(same drain current for M1 and M2) was obtained at the **length=180nm** and **width=0.209um** of **M1**(nMOS) and **length=180nm** and **width=0.775um** of **M2**(pMOS). 
-   
+
+  ## Transient Analysis 
+
+  #### Objective 
+   To analyse the output waveforms to an input signal.
+
+  #### Procedure 
+      
+   1. Apply a sinusoidal input signal of Vg=O.9V with an amplitude of 50mV and frequency of 1kHz.
+   2. Perform a Transient Analysis by setting up stop time as 3ms and run.(.tran 3m )
+
+  #### Result
+
+  
 
     
   
