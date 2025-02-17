@@ -128,7 +128,7 @@
 #### **3.Biasing**
   - Input signal source of 0.9V, **V2** to gate of **M1**.
   - Input signal source, **Vb** to gate of **M2**.
-       **Vb=0** as it is a common diode circuit and Vb has to be zero for the circuit to operate in saturation region.
+      - **Vb=0** as it is a common diode circuit and Vb has to be zero for the circuit to operate in saturation region.
 
 ## DC Analysis 
 
