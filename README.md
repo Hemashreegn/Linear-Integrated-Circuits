@@ -83,8 +83,7 @@
   3. Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
- ![Image](https://github.com/user-attachments/assets/a16e6e26-36cf-4154-9caa-8bb5e6b06fff)
-
+![Image](https://github.com/user-attachments/assets/3d61aab1-2585-4766-970b-eb3432a89cbb)
 
 - The obtained gain is, **Av= -22dB**.
 - The Bandwidth will be f_H in GHz (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
@@ -178,8 +177,11 @@
  ## Inference
 
  - pMOS acts as a active load for this circuit instead of load resistor, so this amplifier circuit causes the inverting behaviour due to commom source transisto rbehaviour in conjunction with pMOS active load.
+
  - Using pMOS transistor we can observe phase inversion.
+
  - Operating point is obtained where Id1=Id2 with different aspect ratio of both transistors.
+
  - The gain increases compared to the first circuit.
 
   
