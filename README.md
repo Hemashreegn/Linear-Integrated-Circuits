@@ -6,7 +6,7 @@
   To design and analyse a Common Source Amplifier using a 180nm MOSFET and perform DC, Transient and AC analysis in LT Spice.
  
  ### Specifications
-  180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power=100uW, AC amplitude=50mV.
+  180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power Budget=100uW, AC amplitude=50mV.
 
  ### Theory 
  
@@ -18,8 +18,8 @@
 
 - **NMOS Transistor** : **M1**(nmos4) 
 - **Resistor** : **R**(1k ohm) 
-- **Power supply** : **V2**(Vdd = 1.8V) 
-- **Input signal source** : **V1**(Vg = 0.9V) 
+- **Power supply** : **V1**(Vdd = 1.8V) 
+- **Input signal source** : **V2**(Vg = 0.9V) 
 
  ### Circuit Diagram 
 ![IMG_20250217_013254.jpg](https://github.com/user-attachments/assets/3561dead-2724-4be3-87ad-47b659163859)
@@ -30,10 +30,10 @@
   - Connect drain of **M1** to one terminal of resistor. 
 
  #### **2.Resistor setup**
-   Select 1k ohm resistor and place it, conect drain terminal of **M1** to one terminal of resistor and other terminal to **V2**(power supply). 
+   Select 1k ohm resistor and place it, conect drain terminal of **M1** to one terminal of resistor and other terminal to **V1**(power supply). 
 
  #### **3.Biasing**
-   Input signal source of 0.9V, **V1** to gate of **M1**. 
+   Input signal source of 0.9V, **V2** to gate of **M1**. 
  
  #### **4.Calculations**
  - **Drain current(Id)** = 5.55 × 10^-5 A (calculated using P = V×I)
@@ -120,10 +120,28 @@
   - Connect drain of **M1** to source of **M2**. 
   - Connect gate of **M1** to input signal of 0.9V.
 
- #### **2. PMOS setup**
+#### **2. PMOS setup**
   - Select pmos4 transistor from the library and place it i.e., **M2**  
   - Connect drain of **M2** to supply voltage (Vdd). 
   - Connect gate of **M2** to Vb(bias voltage).
+
+#### **3.Biasing**
+  - Input signal source of 0.9V, **V2** to gate of **M1**.
+  - Input signal source of     , **Vb** to gate of **M2**.
+
+## DC Analysis 
+
+  #### Objective 
+   To determine the operating point of the MOSFET.
+
+  #### Procedure
+           
+   1. Set up the circuit in the LT Spice.
+   2. Attach the tsmc018.lib library file to the 180nm MOSFET(It has data of both nMOS and pMOS transistor).
+   3. Perform a DC operating point(DC op pnt) analysis.(.op)
+   4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio of both **M1** and **M2**.
+
+    
   
 
  
