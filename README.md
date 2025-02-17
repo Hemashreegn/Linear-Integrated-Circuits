@@ -90,7 +90,7 @@
 
 - The obtained gain is, **Av= -22dB**.
 - The 3dB frequency found was **-25dB**. 
-- The Bandwidth obtained is **61.8Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
+- The Bandwidth obtained is **61.8GHz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
 ## Inference 
 
@@ -174,11 +174,16 @@
   3. Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
+ ![Image](https://github.com/user-attachments/assets/fd4ca5fb-6501-469e-bcd7-6d8f6d391566)
 
+- The obtained gain is, **Av= -33.5dB**.
+- The 3dB frequency found was **-36.65dB**. 
+- The Bandwidth obtained is **82GHz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
-- The obtained gain is, **Av= -25.6dB**.
-- The 3dB frequency found was **-28.6dB**. 
-- The Bandwidth obtained is **82Hz** (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H))
+ ## Inference
+
+ - pMOS acts as a active load for this circuit instead of load resistor, so this amplifier circuit causes the inverting behaviour due to commom source transistor'behaviour in conjunction with pMOS active load.
+ - Using pMOS transistor
 
   
 
