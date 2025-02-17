@@ -8,9 +8,7 @@
  ### Specifications
   180nm technology, tsmc, Vdd=1.8V, Vg=0.9V, Vs=0V, Power Budget=100uW, AC amplitude=50mV.
 
- ### Theory 
  
-
  ### Question 1
  ### Analysis of nMOS CS Amplifier with Resistive load circuit. 
 
@@ -85,7 +83,7 @@
   3. Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
- ![IMG_20250217_012703.jpg](https://github.com/user-attachments/assets/a650c1dc-ad64-48dd-bef7-1b5c7d75a0ef)
+ ![Image](https://github.com/user-attachments/assets/a16e6e26-36cf-4154-9caa-8bb5e6b06fff)
 
 
 - The obtained gain is, **Av= -22dB**.
@@ -174,7 +172,7 @@
   3. Then run the simulation.(.ac dec 100 0.1 1T)
 
  #### Result 
- ![Image](https://github.com/user-attachments/assets/fd4ca5fb-6501-469e-bcd7-6d8f6d391566)
+ ![Image](https://github.com/user-attachments/assets/a16e6e26-36cf-4154-9caa-8bb5e6b06fff)
 
 - The obtained gain is, **Av= -33.5dB**.
 - The 3dB frequency found was **-36.65dB**. 
@@ -182,8 +180,10 @@
 
  ## Inference
 
- - pMOS acts as a active load for this circuit instead of load resistor, so this amplifier circuit causes the inverting behaviour due to commom source transistor'behaviour in conjunction with pMOS active load.
- - Using pMOS transistor
+ - pMOS acts as a active load for this circuit instead of load resistor, so this amplifier circuit causes the inverting behaviour due to commom source transisto rbehaviour in conjunction with pMOS active load.
+ - Using pMOS transistor we can observe phase inversion.
+ - Operating point is obtained where Id1=Id2 with different aspect ratio of both transistors.
+ - The gain increases compared to the first circuit.
 
   
 
