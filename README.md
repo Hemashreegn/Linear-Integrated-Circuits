@@ -127,7 +127,8 @@
 
 #### **3.Biasing**
   - Input signal source of 0.9V, **V2** to gate of **M1**.
-  - Input signal source of     , **Vb** to gate of **M2**.
+  - Input signal source, **Vb** to gate of **M2**.
+       **Vb=0** as it is a common diode circuit and it has to be zero for thr circuit to operate in saturation region.
 
 ## DC Analysis 
 
@@ -140,6 +141,11 @@
    2. Attach the tsmc018.lib library file to the 180nm MOSFET(It has data of both nMOS and pMOS transistor).
    3. Perform a DC operating point(DC op pnt) analysis.(.op)
    4. Find expected Vout(Output voltage) and Id(drain current) by changing the aspect ratio of both **M1** and **M2**.
+
+  #### Result
+
+   The expected operating point **(5.55×10^-5A , 1.64V)**(same drain current for M1 and M2) was obtained at the **length=180nm** and **width=0.209um** of **M1**(nMOS) and **length=180nm** and **width=0.775um** of **M2**(pMOS). 
+   
 
     
   
