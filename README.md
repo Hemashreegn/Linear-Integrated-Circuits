@@ -113,7 +113,7 @@
 - **Input signal source** : **V1**(Vg = 0.9V) 
 
  ### Circuit Diagram 
-
+![Image](https://github.com/user-attachments/assets/ac6e3a45-41db-427d-8aa3-c77534f413e1)
 #### **1. NMOS setup**
   - Select nmos4 transistor from the library and place it i.e., **M1**
   - Connect source of **M1** to ground. 
