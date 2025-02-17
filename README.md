@@ -170,7 +170,7 @@
 
  #### Result 
 ![Image](https://github.com/user-attachments/assets/8b89d4bf-9f24-4352-a527-8179ab96115d)
-- The obtained gain is, **Av= -33.5dB**.
+- The obtained gain is, **Av= -33dB**.
 - The Bandwidth will be f_H in GHz (as lower frequency cutoff(f_L) is usually very low due to coupling and bypass capacitors so, the bandwidth is equal to high frequency cutoff(f_H)).
 
  ## Inference
