@@ -154,8 +154,7 @@
    2. Perform a Transient Analysis by setting up stop time as 3ms and run.(.tran 3m )
 
   #### Result
-  ![Image](https://github.com/user-attachments/assets/49fa334b-e124-4d2e-aa64-e96f2b5ccfd3)
-
+![Image](https://github.com/user-attachments/assets/7ca7db96-1bfe-4f74-91d2-791a631df34d)
   We can observe the **180° phase shift** between the input and output signal.
 
   ## AC Analysis 
