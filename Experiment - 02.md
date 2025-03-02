@@ -3,11 +3,14 @@
 ## **Experiment - 03** {Analysis of MOS Differential Amplifier}
 
 ### **Aim**
-  Perform  DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice      - **Vdd** = 2V 
+  Perform  DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice      
+
+- **Vdd** = 2V 
 - **Vin** = 1V 
 - **Power budget** = 1mW 
 - **Vo,cm** = 1.1V 
 - **Vp** = 0.4V 
+
 Also extract the following parameters:
 - DC operating point
 - Input and output maximum swing
