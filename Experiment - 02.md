@@ -16,7 +16,11 @@ Also extract the following parameters:
 - Input and output maximum swing
 - Gain 
 
-### **Differential Amplifier** 
+### Differential Amplifier with a Resistive Load
+  
+
+
+### **Differential Amplifier with a current source {tail current}** 
   ![IMG-20250302-WA0000.jpg](https://github.com/user-attachments/assets/296e3473-ed00-4e61-86e6-6d93b64bdc2e)
 
 
@@ -29,5 +33,3 @@ Also extract the following parameters:
 The differential pair is all about balance. Thus, for optimal performance the resistors and MOSFETs must be matched. This means that the channel dimensions of both FETs must be the same and that R1 must equal R2. The resistance value chosen for the two resistors will be referred to as RD (for drain resistance).
   
 
-### Differential Amplifier with a Resistive Load
-  
