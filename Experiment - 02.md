@@ -1,8 +1,8 @@
-# Linear Integrated Circuits
+# **Linear Integrated Circuits**
 
-## Experiment - 03 {Analysis of MOS Differential Amplifier}
+## **Experiment - 03** {Analysis of MOS Differential Amplifier}
 
-### Aim
+### **Aim**
   Perform  DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice      - Vdd = 2V 
 - Vin = 1V 
 - Power budget = 1mW 
@@ -13,7 +13,7 @@ Also extract the following parameters:
 - Input and output maximum swing
 - Gain 
 
-### Differential Amplifier 
+### **Differential Amplifier** 
   ![IMG-20250302-WA0000.jpg](https://github.com/user-attachments/assets/296e3473-ed00-4e61-86e6-6d93b64bdc2e)
 
 
