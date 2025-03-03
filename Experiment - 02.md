@@ -53,11 +53,12 @@ Above circuit depecits the two common source amplifier having same Vdd connected
   - Perform AC analysis and obtain gain. 
 
 #### Results
-- ![IMG-20250303-WA0006.jpg](https://github.com/user-attachments/assets/630f615f-d7f0-4bea-b38c-20eecbfc8c61)
+
+![IMG-20250303-WA0006.jpg](https://github.com/user-attachments/assets/630f615f-d7f0-4bea-b38c-20eecbfc8c61)
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=20um for both the MOSFETs. 
 
-- ![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
+![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
 
 - Input maximum swing can be obtain using equation\
     Vds>=Vov+x\
@@ -74,16 +75,12 @@ Above circuit depecits the two common source amplifier having same Vdd connected
     `x=197mV`
 
 After running .op if we use shift+L we can obtain Vth (along with body effect). \
-x is the amplitude to be given in transient analysis to obtain maximum input swing. \
+x is the amplitude to be given in transient analysis to obtain maximum input swing. 
 
+![IMG_20250303_135446.jpg](https://github.com/user-attachments/assets/21fc1f71-9501-40a8-aee5-65db3c1da939)
 
-
-
- 
-
-    
-
-
+- Gain obtained is 5.5dB\
+  3dB frequency is found out to be 3.958GHz
 
 
 ### **Differential Amplifier with a current source {tail current}** 
@@ -92,10 +89,8 @@ x is the amplitude to be given in transient analysis to obtain maximum input swi
 
   The above figure shows the basic MOS differential-pair configuration. It consists of two matched transistors, Q1 and Q2, whose sources are joined together and biased by a constant-currentsource I.  
 
-- Differential amplifiers apply gain not to one input signal but to the difference between two input signals. This means that a differential amplifier naturally eliminates noise or interference that is present in both input signals.
-- It also suppresses common-mode signals—in other words, a DC offset that is present in both input signals will be removed, and the gain will be applied only to the signal of interest (assuming, of course, that the signal of interest is not present in both inputs). 
-- This is particularly advantageous in the context of IC design because it eliminates the need for bulky DC-blocking capacitors.The subtraction that occurs in a differential pair makes it easy to incorporate the circuit into a negative-feedback amplifier.
+- The differential pair is all about balance. Thus, for optimal performance the resistors and MOSFETs must be matched. This means that the channel dimensions of both FETs must be the same and that R1 must equal R2. The resistance value chosen for the two resistors will be referred to as RD (for drain resistance).
 
-The differential pair is all about balance. Thus, for optimal performance the resistors and MOSFETs must be matched. This means that the channel dimensions of both FETs must be the same and that R1 must equal R2. The resistance value chosen for the two resistors will be referred to as RD (for drain resistance).
+
   
 
