@@ -17,7 +17,7 @@ Also extract the following parameters:
 - Gain 
 
 ### Differential Amplifier with a Resistive Load
-  
+  ![IMG_20250303_074814.jpg](https://github.com/user-attachments/assets/cfc32586-fcce-4aa7-b1e8-74ae135d6dd4)
 
 
 ### **Differential Amplifier with a current source {tail current}** 
