@@ -33,17 +33,24 @@ Above circuit depecits the two common source amplifier having same Vdd connected
         
 - Id1=Id2=Id\
   Id=Iss/2\
-  Id=0.25mA
+  `Id=0.25mA`
 
 - Iss=0.5mA and Vp=0.4V\
   Rss=Vp/Iss\
   Rss=0.4/0.5m\
-  Rss=800 ohm
+  `Rss=800 ohm`
 
 #### Procedure
 
-  - Perform DC analysis to obtain operating point(.op) by adjusting width and length of both MOSFETS. 
-  - 
+  - Perform DC analysis to obtain operating point(.op) by adjusting width and length of both MOSFETS and also increase Vin and observe the changes in output.\ 
+
+  - Perform transient analysis and obtain maximum input and output swings. 
+
+  - Perform AC analysis and obtain gain. 
+
+#### Results
+
+
 
 ### **Differential Amplifier with a current source {tail current}** 
   ![IMG_20250303_074851.jpg](https://github.com/user-attachments/assets/751870f1-ecc0-43e5-91e5-b385ad413211)
