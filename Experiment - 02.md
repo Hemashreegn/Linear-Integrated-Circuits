@@ -21,7 +21,7 @@ Also extract the following parameters:
 
 
 ### **Differential Amplifier with a current source {tail current}** 
-  ![IMG-20250302-WA0000.jpg](https://github.com/user-attachments/assets/296e3473-ed00-4e61-86e6-6d93b64bdc2e)
+  ![IMG_20250303_074851.jpg](https://github.com/user-attachments/assets/751870f1-ecc0-43e5-91e5-b385ad413211)
 
 
   The above figure shows the basic MOS differential-pair configuration. It consists of two matched transistors, Q1 and Q2, whose sources are joined together and biased by a constant-currentsource I.  
