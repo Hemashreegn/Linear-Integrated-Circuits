@@ -38,7 +38,7 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - Iss=0.5mA and Vp=0.4V\
   Rss=Vp/Iss\
   Rss=0.4/0.5m\
-  ('''Rss=800 ohm) 
+  (''' Rss=800 ohm ''') 
 
 ### **Differential Amplifier with a current source {tail current}** 
   ![IMG_20250303_074851.jpg](https://github.com/user-attachments/assets/751870f1-ecc0-43e5-91e5-b385ad413211)
