@@ -91,6 +91,48 @@ x is the amplitude to be given in transient analysis to obtain maximum input swi
 
 - The differential pair is all about balance. Thus, for optimal performance the resistors and MOSFETs must be matched. This means that the channel dimensions of both FETs must be the same and that R1 must equal R2. The resistance value chosen for the two resistors will be referred to as RD (for drain resistance).
 
+#### Procedure
+ 
+- Circuit 
+ ![IMG-20250303-WA0009.jpg](https://github.com/user-attachments/assets/a8f7064f-b4d8-4fd4-b6a0-fa3e3d04d675)
+
+
+  - Perform DC analysis to obtain operating point(.op) by adjusting width and length of both MOSFETS and also increase Vin and observe the changes in output.\ 
+
+  - Perform transient analysis and obtain maximum input and output swings. 
+
+  - Perform AC analysis and obtain gain. 
+
+#### Results
+
+![IMG-20250303-WA0010.jpg](https://github.com/user-attachments/assets/a59091a9-2a8a-44f0-a41f-4420cc95b04a)
+
+- Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=20um for both the MOSFETs. 
+
+![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
+
+- Input maximum swing can be obtain using equation\
+    Vds>=Vov+x\
+    Vds=Vgs-Vth+x\
+    Vd-Vs=Vg-Vs-Vth+x\
+    Vo-Vp=Vin-Vp-Vth+x\
+    1.1-0.4=1-0.4-0.497+x\
+    0.7=0.103+x\
+    `x=0.497V`
+
+    x=0.497-Vp\
+    x=0.497-0.4\
+    x=0.197\
+    `x=197mV`
+
+After running .op if we use shift+L we can obtain Vth (along with body effect). \
+x is the amplitude to be given in transient analysis to obtain maximum input swing. 
+
+![IMG-20250303-WA0011.jpg](https://github.com/user-attachments/assets/f0744134-3038-488a-b585-3bfd82681b71)
+
+- Gain obtained is 0dB(it has gradually decreased)\
+  3dB frequency is found out to be 60.189MHz
+
 
   
 
