@@ -25,20 +25,20 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 
 - Both the transistor are nMOS transistors with 180nm technology. 
 
-- P = 1mW and Vdd = 2V
-  W.K.T  P=V×I
-         1×10^-3 = 2 × I
-         I = (1×10^-3)/2
-         Iss = 0.5mA 
+- P = 1mW and Vdd = 2V\
+  W.K.T  P=V×I\
+         1×10^-3 = 2 × I\
+         I = (1×10^-3)/2\
+         Iss = 0.5mA\
 
-- Id1=Id2=Id
-  Id=Iss/2
-  Id=0.25mA
+- Id1=Id2=Id\
+  Id=Iss/2\
+  Id=0.25mA\
 
-- Iss=0.5mA and Vp=0.4V
-  Rss=Vp/Iss
-  Rss=0.4/0.5m
-  Rss=800 ohk
+- Iss=0.5mA and Vp=0.4V\
+  Rss=Vp/Iss\
+  Rss=0.4/0.5m\
+  Rss=800 ohm\
 
 ### **Differential Amplifier with a current source {tail current}** 
   ![IMG_20250303_074851.jpg](https://github.com/user-attachments/assets/751870f1-ecc0-43e5-91e5-b385ad413211)
