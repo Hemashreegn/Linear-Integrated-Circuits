@@ -49,6 +49,33 @@ Above circuit depecits the two common source amplifier having same Vdd connected
   - Perform AC analysis and obtain gain. 
 
 #### Results
+ 
+- Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=20um for both the MOSFETs. 
+
+- Input maximum swing can be obtain using equation\
+    Vds>=Vov+x\
+    Vds=Vgs-Vth+x\
+    Vd-Vs=Vg-Vs-Vth+x\
+    Vo-Vp=Vin-Vp-Vth+x\
+    1.1-0.4=1-0.4-0.497+x\
+    0.7=0.103+x\
+    `x=0.497V`\
+
+    x=0.497-Vp\
+    x=0.497-0.4\
+    x=0.197\
+    `x=197mV`\
+
+After running .op if we use shift+L we can obtain Vth (along with body effect). \
+x is the amplitude to be given in transient analysis to obtain maximum input swing. \
+
+
+
+
+ 
+
+    
+
 
 
 
