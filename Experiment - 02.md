@@ -29,10 +29,12 @@ Above circuit depecits the two common source amplifier having same Vdd connected
   W.K.T  P=V×I\
          1×10^-3 = 2 × I\
          I = (1×10^-3)/2\
-         ’’’
+         '''
          Iss = 0.5mA
-         ’’’
-
+         '''
+```
+This is a box using a code block
+```
 - Id1=Id2=Id\
   Id=Iss/2\
   Id=0.25mA
