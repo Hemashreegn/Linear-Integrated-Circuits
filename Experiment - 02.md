@@ -188,6 +188,15 @@ x is the amplitude to be given in transient analysis to obtain maximum input swi
 - Gain obtained is -8.813dB\
   -3dB frequency is found out to be 1.2GHzHz
 
+#### Inference 
+
+- The differential amplifier with a resistive load has the highest gain and highest -3dB frequency, making it suitable for high-frequency applications but with moderate power consumption and gain.
+
+- The configuration with a tail current source (current source biasing) resulted in a lower gain and -3dB frequency, which may be beneficial for achieving more stable operation, but at the cost of reduced amplification and bandwidth.
+
+- The MOSFET current source produced the lowest gain and bandwidth, suggesting that the choice of current source can significantly affect both the frequency response and the amplification characteristics of the differential amplifier.
+
+- This experiment demonstrates the trade-offs between different configurations of MOS differential amplifiers and highlights the importance of balancing gain, bandwidth, and stability in analog circuit design.
 
 
 
