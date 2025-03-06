@@ -142,9 +142,9 @@ The differential pair is all about balance. Thus, for optimal performance the re
 ### DC ANALYSIS
   - Connect the circuit.
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
-  - Run simulation. 
-
-![Screenshot 2025-03-06 214828](https://github.com/user-attachments/assets/6c9b253a-8b4b-4e34-9f8d-fa41f9123316)
+  - Run simulation.
+  - 
+![Uploading Screenshot 2025-03-07 014917.png…]()
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=19.3625um for both the MOSFETs.
 - No changes will be caused by change in resistor load to current source.  
@@ -153,10 +153,9 @@ The differential pair is all about balance. Thus, for optimal performance the re
 ![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
 
 ### AC ANALYSIS
-![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
 
 - Gain obtained is 20dB\
-- 3dB frequency (20db-3dB=17dB) is found out to be 3.592GHz.
+- 3dB frequency (20db-3dB=17dB) is found out to be 3.720GHz.
 - There is no change in gain from circuit 1.
   
 
