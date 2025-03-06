@@ -50,8 +50,7 @@ Also extract the following parameters:
     Vin(cm)_min=Vp+Vgs\
     Vin(cm)_min=0.4+0.6\
     `Vin(cm)_min=1V`
-
-   -Maximum input
+  -Maximum input
     Vin(cm)_max=Vd+Vth\
     Vin(cm)_max=1.1+0.497\
     `Vin(cm)_min=1.597V`
@@ -62,12 +61,12 @@ Also extract the following parameters:
   
 - **Transconductance**
   gm=2Id/(Vov)\
-  gm=2*0.25*10^-3/0.2\
+  gm=2 * 0.25 * 10^-3/0.2\
   `gm=2.5m`
 
 - **Gain**
   Av=Vout/Vin-gm*Rd\
-  Av=-12.5*10^-3*3.6*10^3\
+  Av=-12.5 * 10^-3 * 3.6 * 10^3\
   `Av=9V/V`
 
 - **Gain in dB**
@@ -99,10 +98,10 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - When maximum input Vin(max)=1.5V ,then maximum output Vout(max)=    is obtained.
 
 ### AC Analysis
-![IMG_20250303_135446.jpg](https://github.com/user-attachments/assets/21fc1f71-9501-40a8-aee5-65db3c1da939)
+![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
 
-- Gain obtained is 5.5dB\
-  -3dB frequency is found out to be 3.958GHz
+- Gain obtained is 20dB\
+-3dB frequency (20db-3dB=17dB) is found out to be 3.592GHz.
 
 
 ### **Differential Amplifier with a current source {tail current}** 
