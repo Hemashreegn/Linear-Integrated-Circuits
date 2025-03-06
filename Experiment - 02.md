@@ -12,71 +12,93 @@
 - **Vp** = 0.4V 
 
 Also extract the following parameters:
-- DC operating point
-- Input and output maximum swing
-- Gain 
-
-### Differential Amplifier with a Resistive Load
-  ![IMG_20250303_074814.jpg](https://github.com/user-attachments/assets/cfc32586-fcce-4aa7-b1e8-74ae135d6dd4)
-
-Above circuit depecits the two common source amplifier having same Vdd connected to a single resistor Rss(Ron3) this constitutes differential amplifier with resistive load. 
+- **DC operating point**
+- **Input and output maximum swing**
+- **Gain**  
 
 #### Calculations
 
-- Both the transistor are nMOS transistors with 180nm technology. 
+- Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology. 
 
-- P = 1mW and Vdd = 2V\
+- **Tail current**
+  P = 1mW and Vdd = 2V\
   W.K.T  P=V×I\
-         1×10^-3 = 2 × I\
-         I = (1×10^-3)/2\
-         `Iss = 0.5mA`
+  1×10^-3 = 2 × I\
+  I = (1×10^-3)/2\
+  `Iss = 0.5mA`
         
-- Id1=Id2=Id\
+- **Drain current**
+  Id1=Id2=Id\
   Id=Iss/2\
   `Id=0.25mA`
 
-- Iss=0.5mA and Vp=0.4V\
+- **Resistance of Tail current**
+  Iss=0.5mA and Vp=0.4V\
   Rss=Vp/Iss\
   Rss=0.4/0.5m\
-  `Rss=800 ohm`
+  `Rss=800 ohms`
 
-#### Procedure
- 
-- Circuit 
- ![IMG-20250303-WA0005.jpg](https://github.com/user-attachments/assets/beac2cf1-9d3a-4c21-8823-efaa5b459583)
+- **Overdrive voltage**
+  Vov=Vgs-Vth\
+  Vov=Vg-Vs-Vth\
+  Vov=Vin-Vp-Vth
+  Vov=1-0.4-0.4
+  `Vov=0.2`
 
+- **Input swing**\
+  - Minimum input
+    Vin(cm)_min=Vp+Vgs\
+    Vin(cm)_min=0.4+0.6\
+    `Vin(cm)_min=1V`
 
-  - Perform DC analysis to obtain operating point(.op) by adjusting width and length of both MOSFETS and also increase Vin and observe the changes in output.\ 
+   -Maximum input
+    Vin(cm)_max=Vd+Vth\
+    Vin(cm)_max=1.1+0.497\
+    `Vin(cm)_min=1.597V`
 
-  - Perform transient analysis and obtain maximum input and output swings. 
+  Input swing=Vin(cm)_max-Vin(cm)_min\
+  Input swing=1.597-1
+  `Input swing=0.597`
+  
+- **Transconductance**
+  gm=2Id/(Vov)\
+  gm=2*0.25*10^-3/0.2\
+  `gm=2.5m`
 
-  - Perform AC analysis and obtain gain. 
+- **Gain**
+  Av=Vout/Vin-gm*Rd\
+  Av=-12.5*10^-3*3.6*10^3\
+  `Av=9V/V`
 
-#### Results
+- **Gain in dB**
+  Av=20log(Vout/Vin)\
+  Av=20log(9)\
+  `Av=19.084dB`
 
-![IMG-20250303-WA0006.jpg](https://github.com/user-attachments/assets/630f615f-d7f0-4bea-b38c-20eecbfc8c61)
+### Differential Amplifier with a Resistive Load
+![Screenshot 2025-03-06 195034](https://github.com/user-attachments/assets/049080c4-bcfb-4a86-a378-5e590e05fa77)
 
-- Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=19.3625um for both the MOSFETs. 
+Above circuit depecits the two common source amplifier having same Vdd connected to a single resistor Rss this constitutes differential amplifier with resistive load.
 
-![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
+### DC Analysis
+  - Connect the circuit.
+  - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
+  - Run simulation. 
 
-- Input maximum swing can be obtain using equation\
-    Vds>=Vov+x\
-    Vds=Vgs-Vth+x\
-    Vd-Vs=Vg-Vs-Vth+x\
-    Vo-Vp=Vin-Vp-Vth+x\
-    1.1-0.4=1-0.4-0.497+x\
-    0.7=0.103+x\
-    `x=0.497V`
+![Screenshot 2025-03-06 214828](https://github.com/user-attachments/assets/14e941a9-0838-4d73-87f5-130976a0fccc)
 
-    x=0.497-Vp\
-    x=0.497-0.4\
-    x=0.197\
-    `x=197mV`
+- Operating point **(1.1V , 0.25mA)** is obtained at **length=180nm** and **width=19.3625um** for both the MOSFETs.
+- Id1 , Id2 , Iss are obtained same as theoretical values.
 
-After running .op if we use shift+L we can obtain Vth (along with body effect). \
-x is the amplitude to be given in transient analysis to obtain maximum input swing. 
+### Transient Analysis
 
+- When minimum input Vin(min)=1V is given as input ,the minimum output Vout(min)=     is obtained.
+
+![image](https://github.com/user-attachments/assets/ce97dc7c-e435-4f0c-af67-37e2c3bddb99)
+
+- When maximum input Vin(max)=1.5V ,then maximum output Vout(max)=    is obtained.
+
+### AC Analysis
 ![IMG_20250303_135446.jpg](https://github.com/user-attachments/assets/21fc1f71-9501-40a8-aee5-65db3c1da939)
 
 - Gain obtained is 5.5dB\
@@ -84,19 +106,14 @@ x is the amplitude to be given in transient analysis to obtain maximum input swi
 
 
 ### **Differential Amplifier with a current source {tail current}** 
-  ![IMG_20250303_074851.jpg](https://github.com/user-attachments/assets/751870f1-ecc0-43e5-91e5-b385ad413211)
+  ![image](https://github.com/user-attachments/assets/ded1cf65-39e5-480b-9e7d-edf39f83f4f6)
 
-
-  The above figure shows the basic MOS differential-pair configuration. It consists of two matched transistors, Q1 and Q2, whose sources are joined together and biased by a constant-currentsource I.  
+ The above figure shows the basic MOS differential-pair configuration. It consists of two matched transistors, Q1 and Q2, whose sources are joined together and biased by a constant-current
+source I.  
 
 - The differential pair is all about balance. Thus, for optimal performance the resistors and MOSFETs must be matched. This means that the channel dimensions of both FETs must be the same and that R1 must equal R2. The resistance value chosen for the two resistors will be referred to as RD (for drain resistance).
 
 #### Procedure
- 
-- Circuit 
- ![IMG-20250303-WA0009.jpg](https://github.com/user-attachments/assets/a8f7064f-b4d8-4fd4-b6a0-fa3e3d04d675)
-
-
   - Perform DC analysis to obtain operating point(.op) by adjusting width and length of both MOSFETS and also increase Vin and observe the changes in output.\ 
 
   - Perform transient analysis and obtain maximum input and output swings. 
