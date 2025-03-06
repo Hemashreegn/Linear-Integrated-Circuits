@@ -1,6 +1,34 @@
-# **Linear Integrated Circuits**
+# **LINEAR INTEGRATED CIRCUITS**
 
-## **EXPERIMENT - 03** {Analysis of MOS Differential Amplifier}
+## **EXPERIMENT - 03** {ANALYSIS OF MOS DIFFERENTIAL AMPLIFIER}
+
+### THEORY
+![image](https://github.com/user-attachments/assets/a7429c17-48c7-4f08-ba66-3bb71cc7896d)
+
+A **differential amplifier** amplifies the difference between two input signals while rejecting common-mode noise. It consists of a **matched transistor pair (NMOS)** sharing a common current source, with outputs taken from the drain nodes. The circuit improves **signal integrity, gain, and bandwidth**, making it essential in analog and mixed-signal designs.
+
+- **Types Of Differential Amplifiers**
+  
+  > **Resistive Load Differential amplifier**\
+     - Uses **load resistor** for biasing and signal amplification.
+     - **Moderate gain** with low output impedance.
+     - Increasing gain with a larger resistor reduces the output voltage swing, limiting the amplifier's signal range.
+
+  > **Current Mirror Source Differential Amplifier**\
+     - Uses **active current mirror** instead of resistor.
+     - **High gain** with high input impedance.
+     - Higher gain reduces output swing because the active load transistors limit voltage headroom.
+
+  > **NMOS Tail Current Differential Amplifier**
+     - Uses **NMOS as current source** instead of current source.
+     - **Gain increases** because the NMOS current source reduces degeneration, and output impedance is higher due to the active current source.
+     - Improves bias stability, gain, and common-mode rejection, but reduces output swing due to the voltage headroom required by the NMOS current source.
+
+  > **Active Load Differential Amplifier**
+     - Replaces Rd resistors with **180nm** technology **PMOS as load** .
+     - **Higher gain** with higher input impedance.
+     - Higher gain comes at the cost of reduced output swing due to limited voltage headroom from the active load 
+      transistors.
 
 ### **AIM**
   Perform  DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice      
@@ -16,7 +44,7 @@ Also extract the following parameters:
 - **Input and output maximum swing**
 - **Gain**  
 
-#### CALCULATIONS
+### CALCULATIONS
 
 - Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology. 
 
@@ -46,15 +74,15 @@ Also extract the following parameters:
   `Vov=0.2`
 
 - **Input swing**\
-  - Minimum input
+  > Minimum input
     Vin(cm)_min=Vp+Vgs\
     Vin(cm)_min=0.4+0.6\
     `Vin(cm)_min=1V`
-  - Maximum input
+  > Maximum input
     Vin(cm)_max=Vd+Vth\
     Vin(cm)_max=1.1+0.497\
     `Vin(cm)_min=1.597V`
-  - Input swing=Vin(cm)_max-Vin(cm)_min\
+  > Input swing=Vin(cm)_max-Vin(cm)_min\
     Input swing=1.597-1\
     `Input swing=0.597`
   
@@ -73,7 +101,7 @@ Also extract the following parameters:
   Av=20log(9)\
   `Av=19.084dB`
 
-### Differential Amplifier with a Resistive Load
+### CIRCUIT - 1 { DIFFERENTIAL AMPLIFIER WITH RESISTIVE LOAD }
 ![Screenshot 2025-03-06 195034](https://github.com/user-attachments/assets/049080c4-bcfb-4a86-a378-5e590e05fa77)
 
 Above circuit depecits the two common source amplifier having same Vdd connected to a single resistor Rss this constitutes differential amplifier with resistive load.
