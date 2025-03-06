@@ -1,8 +1,8 @@
 # **Linear Integrated Circuits**
 
-## **Experiment - 03** {Analysis of MOS Differential Amplifier}
+## **EXPERIMENT - 03** {Analysis of MOS Differential Amplifier}
 
-### **Aim**
+### **AIM**
   Perform  DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice      
 
 - **Vdd** = 2V 
@@ -16,23 +16,23 @@ Also extract the following parameters:
 - **Input and output maximum swing**
 - **Gain**  
 
-#### Calculations
+#### CALCULATIONS
 
 - Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology. 
 
-- **Tail current**
+- **Tail current**\
   P = 1mW and Vdd = 2V\
   W.K.T  P=V×I\
   1×10^-3 = 2 × I\
   I = (1×10^-3)/2\
   `Iss = 0.5mA`
         
-- **Drain current**
+- **Drain current**\
   Id1=Id2=Id\
   Id=Iss/2\
   `Id=0.25mA`
 
-- **Resistance of Tail current**
+- **Resistance of Tail current**\
   Iss=0.5mA and Vp=0.4V\
   Rss=Vp/Iss\
   Rss=0.4/0.5m\
@@ -42,7 +42,7 @@ Also extract the following parameters:
   Vov=Vgs-Vth\
   Vov=Vg-Vs-Vth\
   Vov=Vin-Vp-Vth
-  Vov=1-0.4-0.4
+  Vov=1-0.4-0.4\
   `Vov=0.2`
 
 - **Input swing**\
@@ -50,14 +50,13 @@ Also extract the following parameters:
     Vin(cm)_min=Vp+Vgs\
     Vin(cm)_min=0.4+0.6\
     `Vin(cm)_min=1V`
-  -Maximum input
+  - Maximum input
     Vin(cm)_max=Vd+Vth\
     Vin(cm)_max=1.1+0.497\
     `Vin(cm)_min=1.597V`
-
-  Input swing=Vin(cm)_max-Vin(cm)_min\
-  Input swing=1.597-1
-  `Input swing=0.597`
+  - Input swing=Vin(cm)_max-Vin(cm)_min\
+    Input swing=1.597-1\
+    `Input swing=0.597`
   
 - **Transconductance**
   gm=2Id/(Vov)\
@@ -79,17 +78,17 @@ Also extract the following parameters:
 
 Above circuit depecits the two common source amplifier having same Vdd connected to a single resistor Rss this constitutes differential amplifier with resistive load.
 
-### DC Analysis
+### DC ANALYSIS
   - Connect the circuit.
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
   - Run simulation. 
 
-![Screenshot 2025-03-06 214828](https://github.com/user-attachments/assets/14e941a9-0838-4d73-87f5-130976a0fccc)
+![Screenshot 2025-03-06 214828](https://github.com/user-attachments/assets/6c9b253a-8b4b-4e34-9f8d-fa41f9123316)
 
 - Operating point **(1.1V , 0.25mA)** is obtained at **length=180nm** and **width=19.3625um** for both the MOSFETs.
 - Id1 , Id2 , Iss are obtained same as theoretical values.
 
-### Transient Analysis
+### TRANSIENT ANALYSIS
 
 - When minimum input Vin(min)=1V is given as input ,the minimum output Vout(min)=     is obtained.
 
@@ -97,7 +96,7 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 
 - When maximum input Vin(max)=1.5V ,then maximum output Vout(max)=    is obtained.
 
-### AC Analysis
+### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
 
 - Gain obtained is 20dB\
