@@ -87,7 +87,7 @@ Now increase Vin(cm) as 1.1V
 
 Further increase Vin(cm) as 1.2V
 
-![Screenshot 2025-03-07 223905](https://github.com/user-attachments/assets/2cb5a6de-fb97-44d8-aa66-d791a9e712a7)
+![Screenshot 2025-03-07 223905](https://github.com/user-attachments/assets/d1270841-5d15-444a-a959-2d70389074f7)
 
 - Here Iss and Id current increases more and Vout decreases more.
 
