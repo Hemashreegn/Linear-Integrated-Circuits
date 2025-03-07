@@ -146,7 +146,7 @@ Further increase Vin(cm) as 1.2V
 
 ### TRANSIENT ANALYSIS
 
-   ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
+![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
 
 - When input Vin1=1V with amplitude=50mV and frequency=1kHz and input Vin2=1V with amplitude=50mV and frequency=1kHz with phi(deg)=180.i.e.,
 
@@ -161,13 +161,13 @@ Further increase Vin(cm) as 1.2V
     Then we get,\
     `Vout(min) = 0.65V` , `Vout(max) = 1.55V` and `Vout(p-p) swing = 1.8V`
 
-   ![image](https://github.com/user-attachments/assets/dbc0cefc-2110-4d05-8581-c01f3afa4de3)
+ - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
 
-- When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
+ ![image](https://github.com/user-attachments/assets/dbc0cefc-2110-4d05-8581-c01f3afa4de3)
 
-   ![image](https://github.com/user-attachments/assets/156ee029-adb0-4f21-bba8-012b6a4b2f2b)
+ - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
 
-- When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
+ ![image](https://github.com/user-attachments/assets/156ee029-adb0-4f21-bba8-012b6a4b2f2b)
 
  ### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
