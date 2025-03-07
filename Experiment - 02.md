@@ -125,15 +125,15 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 
 - Now increase Vin(cm) as 1.1V
 
-![image](https://github.com/user-attachments/assets/fd2d6710-b6a5-4041-be1e-a6de5a118697)
+![Screenshot 2025-03-07 223629](https://github.com/user-attachments/assets/90d05a4c-4340-4ef6-ace9-4048702184b4)
 
- We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
+  * We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
 
 - Further increase Vin(cm) as 1.2V
 
-![image](https://github.com/user-attachments/assets/f02d113b-d5cf-431b-bb0c-fdf148df6040)
+![Screenshot 2025-03-07 223905](https://github.com/user-attachments/assets/2cb5a6de-fb97-44d8-aa66-d791a9e712a7)
 
- Here Iss and Id current increases more and Vout decreases more.
+  * Here Iss and Id current increases more and Vout decreases more.
 
 #### Comparision Table for Different Vin(cm)
 
