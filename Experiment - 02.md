@@ -46,68 +46,7 @@ Also extract the following parameters:
 
 ### CALCULATIONS
 
-- Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology. 
-
-- **Tail current**\
-  P = 1mW and Vdd = 2V\
-  W.K.T  P=V×I\
-  1×10^-3 = 2 × I\
-  I = (1×10^-3)/2\
-  `Iss = 0.5mA`
-        
-- **Drain current**\
-  Id1=Id2=Id\
-  Id=Iss/2\
-  `Id=0.25mA`
-
-- **Resistance of Tail current**\
-  Iss=0.5mA and Vp=0.4V\
-  Rss=Vp/Iss\
-  Rss=0.4/0.5m\
-  `Rss=800 ohms`
-
-- **Overdrive voltage**\
-  Vov=Vgs-Vth\
-  Vov=Vg-Vs-Vth\
-  Vov=Vin-Vp-Vth\
-  Vov=1-0.4-0.4\
-  `Vov=0.2`
-
-- **Minimum input**\
-  Vin(cm)_min=Vp+Vth\
-  Vin(cm)_min=0.4+0.497\
-  `Vin(cm)_min=0.897V`
-    
-- **Maximum input**\
-  Vin(cm)_max=Vo(cm)+Vth\
-  Vin(cm)_max=1.1+0.497\
-  `Vin(cm)_min=1.597V`
-
-- **Minimum output**\
-  Vo(cm)_min=Vov+Vp\
-  Vo(cm)_min=0.503+0.4\
-  `Vo(cm)_min=0.903V`
-    
-- **Maximum output**\
-  Vo(cm)_max=Vdd\
-  `Vo(cm)_max=2V`
-    
-- **Transconductance**\
-  gm=2Id/(Vov)\
-  gm=2 * 0.25 * 10^-3/0.2\
-  `gm=2.5m`
-
-- **Gain**\
-  Av=Vout/Vin-gm*Rd\
-  Av=-12.5 * 10^-3 * 3.6 * 10^3\
-  `Av=9V/V`
-
-- **Gain in dB**\
-  Av=20log(Vout/Vin)\
-  Av=20log(9)\
-  `Av=19.084dB`
-
-  # Differential Amplifier Calculations (180nm Technology)
+- Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology.
 
 | **Calculation**        | **Formula / Expression**                             | **Value**            |
 |-----------------------|-------------------------------------------------|------------------|
@@ -121,7 +60,7 @@ Also extract the following parameters:
 | **Max Output Voltage (Vout max)** | Vo(cm)_max = Vdd        | 2V              |
 | **Transconductance (gm)** | gm = 2Id/Vov                 | 2.5mS           |
 | **Voltage Gain (Av)** | Av = - gm * Rd                  | -9 V/V          |
-| **Gain in dB (Av dB)** | Av(dB) = 20(log|Av|)             | 19.08 dB        |
+| **Gain in dB (Av dB)** | Av(dB) = 20(log(Av))             | 19.08 dB        |
 
 
  
