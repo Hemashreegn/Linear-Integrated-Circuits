@@ -123,17 +123,17 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - Operating point **(1.1V , 0.25mA)** is obtained at **length=180nm** and **width=19.3625um** for both the MOSFETs.
 - Id1 , Id2 , Iss are obtained same as theoretical values.
 
- Now increase Vin(cm) as 1.1V
+- Now increase Vin(cm) as 1.1V
 
 ![image](https://github.com/user-attachments/assets/fd2d6710-b6a5-4041-be1e-a6de5a118697)
 
-  - We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
+ We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
 
- Further increase Vin(cm) as 1.2V
+- Further increase Vin(cm) as 1.2V
 
 ![image](https://github.com/user-attachments/assets/f02d113b-d5cf-431b-bb0c-fdf148df6040)
 
-  - Here Iss and Id current increases more and Vout decreases.
+ Here Iss and Id current increases more and Vout decreases more.
 
 #### Comparision Table for Different Vin(cm)
 
@@ -142,8 +142,6 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 | 1.0              | 0.000500    | 0.000250    | 0.000250    | 1.1          | 1.1          |
 | 1.1              | 0.0005988   | 0.000299    | 0.000299    | 0.922        | 0.922        |
 | 1.2              | 0.000693    | 0.0003465   | 0.0003465   | 0.7522       | 0.7522       |
-
-
 
 
 ### TRANSIENT ANALYSIS
