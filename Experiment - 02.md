@@ -66,14 +66,14 @@ Also extract the following parameters:
   Rss=0.4/0.5m\
   `Rss=800 ohms`
 
-- **Overdrive voltage**
+- **Overdrive voltage**\
   Vov=Vgs-Vth\
   Vov=Vg-Vs-Vth\
   Vov=Vin-Vp-Vth
   Vov=1-0.4-0.4\
   `Vov=0.2`
 
-- **Input swing**\
+- **Input swing**
   - Minimum input
     Vin(cm)_min=Vp+Vgs\
     Vin(cm)_min=0.4+0.6\
@@ -88,17 +88,17 @@ Also extract the following parameters:
     Input swing=1.597-1\
     `Input swing=0.597`
   
-- **Transconductance**
+- **Transconductance**\
   gm=2Id/(Vov)\
   gm=2 * 0.25 * 10^-3/0.2\
   `gm=2.5m`
 
-- **Gain**
+- **Gain**\
   Av=Vout/Vin-gm*Rd\
   Av=-12.5 * 10^-3 * 3.6 * 10^3\
   `Av=9V/V`
 
-- **Gain in dB**
+- **Gain in dB**\
   Av=20log(Vout/Vin)\
   Av=20log(9)\
   `Av=19.084dB`
@@ -130,8 +130,10 @@ Above circuit depecits the two common source amplifier having same Vdd connected
    Vout = Av * Vin(diff)\
    Vout = 9 * 100m sin(2pi 1000t)\
    `Vout = 900m sin(2pi 1000t)`
+  
     Then we get,\
     `Vout(min) = 0.65V` and `Vout(max) = 1.55V`
+  
      Vout swing = (1.55 - 0.65) = 0.9V\
      Vout(p-p) swing = 2 * 0.9\
      `Vout(p-p) swing = 1.8V`
