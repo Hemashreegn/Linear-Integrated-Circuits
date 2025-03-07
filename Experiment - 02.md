@@ -73,25 +73,24 @@ Also extract the following parameters:
   Vov=1-0.4-0.4\
   `Vov=0.2`
 
-- **Input swing**
-  - **Minimum input**\
-    Vin(cm)_min=Vp+Vth\
-    Vin(cm)_min=0.4+0.497\
-    `Vin(cm)_min=0.897V`
+- **Minimum input**\
+  Vin(cm)_min=Vp+Vth\
+  Vin(cm)_min=0.4+0.497\
+  `Vin(cm)_min=0.897V`
     
-  - **Maximum input**\
-    Vin(cm)_max=Vo(cm)+Vth\
-    Vin(cm)_max=1.1+0.497\
-    `Vin(cm)_min=1.597V`
+- **Maximum input**\
+  Vin(cm)_max=Vo(cm)+Vth\
+  Vin(cm)_max=1.1+0.497\
+  `Vin(cm)_min=1.597V`
 
-  - **Minimum output**\
-    Vo(cm)_min=Vov+Vp\
-    Vo(cm)_min=0.503+0.4\
-    `Vo(cm)_min=0.903V`
+- **Minimum output**\
+  Vo(cm)_min=Vov+Vp\
+  Vo(cm)_min=0.503+0.4\
+  `Vo(cm)_min=0.903V`
     
-  - **Maximum output**\
-    Vo(cm)_max=Vdd\
-    `Vo(cm)_max=2V`
+- **Maximum output**\
+  Vo(cm)_max=Vdd\
+  `Vo(cm)_max=2V`
     
 - **Transconductance**\
   gm=2Id/(Vov)\
@@ -127,13 +126,13 @@ Now increase Vin(cm) as 1.1V
 
 ![Screenshot 2025-03-07 223629](https://github.com/user-attachments/assets/90d05a4c-4340-4ef6-ace9-4048702184b4)
 
-* We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
+- We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
 
 Further increase Vin(cm) as 1.2V
 
 ![Screenshot 2025-03-07 223905](https://github.com/user-attachments/assets/2cb5a6de-fb97-44d8-aa66-d791a9e712a7)
 
-* Here Iss and Id current increases more and Vout decreases more.
+- Here Iss and Id current increases more and Vout decreases more.
 
 #### Comparision Table for Different Vin(cm)
 
@@ -161,13 +160,16 @@ Further increase Vin(cm) as 1.2V
   
 ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
 
+
  - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
 
 ![image](https://github.com/user-attachments/assets/dbc0cefc-2110-4d05-8581-c01f3afa4de3)
 
+
  - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
 
 ![image](https://github.com/user-attachments/assets/156ee029-adb0-4f21-bba8-012b6a4b2f2b)
+
 
  ### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
