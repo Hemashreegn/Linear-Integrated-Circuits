@@ -9,12 +9,12 @@ A **differential amplifier** amplifies the difference between two input signals 
 
 - **Types Of Differential Amplifiers**
   
-  - **Resistive Load Differential amplifier**\
+  - **Resistive Load Differential amplifier**
      - Uses **load resistor** for biasing and signal amplification.
      - **Moderate gain** with low output impedance.
      - Increasing gain with a larger resistor reduces the output voltage swing, limiting the amplifier's signal range.
 
-  - **Current Mirror Source(Tail current) Differential Amplifier**\
+  - **Current Mirror Source(Tail current) Differential Amplifier**
      - Uses **active current mirror** instead of resistor.
      - **High gain** with high input impedance.
      - Higher gain reduces output swing because the active load transistors limit voltage headroom.
@@ -119,14 +119,24 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - Id1 , Id2 , Iss are obtained same as theoretical values.
 
 ### TRANSIENT ANALYSIS
+- ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
 
-- When minimum input Vin(min)=1V is given as input ,the minimum output Vout(min)=     is obtained.
+- When input Vin1=1V with amplitude=50mV and frequency=1kHz and input Vin2=1V with amplitude=50mV and frequency=1kHz with phi(deg)=180.i.e.,\
 
-![image](https://github.com/user-attachments/assets/ce97dc7c-e435-4f0c-af67-37e2c3bddb99)
+   Vin1 = 1 + 50m sin(2pi 1000t) and Vin2 = 1 - 50m sin(2pi 1000t) then\
+   Vin(diff) = Vin1 - Vin2\
+   `Vin(diff) = 100m sin(2pi 1000t)`
 
-- When maximum input Vin(max)=1.5V ,then maximum output Vout(max)=    is obtained.
-
-### AC ANALYSIS
+   Vout = Av * Vin(diff)\
+   Vout = 9 * 100m sin(2pi 1000t)\
+   `Vout = 900m sin(2pi 1000t)`
+    Then we get,\
+    `Vout(min) = 0.65V` and `Vout(max) = 1.55V`
+     Vout swing = (1.55 - 0.65) = 0.9V\
+     Vout(p-p) swing = 2 * 0.9\
+     `Vout(p-p) swing = 1.8V`
+  
+ ### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
 
 - Gain obtained is 20dB\
