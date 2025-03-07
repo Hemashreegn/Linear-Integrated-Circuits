@@ -121,7 +121,7 @@ Also extract the following parameters:
 | **Max Output Voltage (Vout max)** | \( Vo(cm)_max = Vdd} \)       | 2V              |
 | **Transconductance (gm)** | \( gm = \2Id/Vov \)                | 2.5mS           |
 | **Voltage Gain (Av)** | \( Av = - gm * Rd \)                  | -9 V/V          |
-| **Gain in dB (Av dB)** | \( Av(dB) = 20 \log | A_v | \)             | 19.08 dB        |
+| **Gain in dB (Av dB)** | \( Av(dB) = 20 \log |Av| \)             | 19.08 dB        |
 
 
  
