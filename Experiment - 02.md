@@ -111,17 +111,17 @@ Also extract the following parameters:
 
 | **Calculation**        | **Formula / Expression**                             | **Value**            |
 |-----------------------|-------------------------------------------------|------------------|
-| **Tail Current (Iss)**  | \( I_{SS} = \frac{P}{V_{DD}} \)                 | 0.5mA           |
-| **Drain Current (Id)**  | \( I_D = \frac{I_{SS}}{2} \)                     | 0.25mA          |
-| **Tail Resistance (Rss)** | \( R_{SS} = \frac{V_p}{I_{SS}} \)               | 800Ω            |
-| **Overdrive Voltage (Vov)** | \( V_{ov} = V_{GS} - V_{th} \)              | 0.2V            |
-| **Min Input Voltage (Vin_CM min)** | \( V_{in,CM(min)} = V_p + V_{th} \)  | 0.897V          |
-| **Max Input Voltage (Vin_CM max)** | \( V_{in,CM(max)} = V_{out,CM} + V_{th} \) | 1.597V          |
-| **Min Output Voltage (Vout min)** | \( V_{out,CM(min)} = V_{ov} + V_p \) | 0.903V          |
-| **Max Output Voltage (Vout max)** | \( V_{out,CM(max)} = V_{DD} \)       | 2V              |
-| **Transconductance (gm)** | \( g_m = \frac{2I_D}{V_{ov}} \)                | 2.5mS           |
-| **Voltage Gain (Av)** | \( A_v = - g_m \times R_D \)                  | -9 V/V          |
-| **Gain in dB (Av dB)** | \( A_v(dB) = 20 \log | A_v | \)             | 19.08 dB        |
+| **Tail Current (Iss)**  | \( Iss = \P/Vdd \)                 | 0.5mA           |
+| **Drain Current (Id)**  | \( Id = \Iss/2 \)                     | 0.25mA          |
+| **Tail Resistance (Rss)** | \( Rss = \Vp/Iss \)               | 800Ω            |
+| **Overdrive Voltage (Vov)** | \( Vov = Vgs - Vth \)              | 0.2V            |
+| **Min Input Voltage (Vin_CM min)** | \( Vin(cm)_min = Vp + Vth} \)  | 0.897V          |
+| **Max Input Voltage (Vin_CM max)** | \( Vin(cm)_max = Vo(cm) + Vp} \) | 1.597V          |
+| **Min Output Voltage (Vout min)** | \( Vo(cm)_min = Vov + Vp \) | 0.903V          |
+| **Max Output Voltage (Vout max)** | \( Vo(cm)_max = Vdd} \)       | 2V              |
+| **Transconductance (gm)** | \( gm = \2Id/Vov \)                | 2.5mS           |
+| **Voltage Gain (Av)** | \( Av = - gm * Rd \)                  | -9 V/V          |
+| **Gain in dB (Av dB)** | \( Av(dB) = 20 \log | A_v | \)             | 19.08 dB        |
 
 
  
