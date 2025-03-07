@@ -106,6 +106,24 @@ Also extract the following parameters:
   Av=20log(Vout/Vin)\
   Av=20log(9)\
   `Av=19.084dB`
+
+  # Differential Amplifier Calculations (180nm Technology)
+
+| **Calculation**        | **Formula / Expression**                             | **Value**            |
+|-----------------------|-------------------------------------------------|------------------|
+| **Tail Current (Iss)**  | \( I_{SS} = \frac{P}{V_{DD}} \)                 | 0.5mA           |
+| **Drain Current (Id)**  | \( I_D = \frac{I_{SS}}{2} \)                     | 0.25mA          |
+| **Tail Resistance (Rss)** | \( R_{SS} = \frac{V_p}{I_{SS}} \)               | 800Ω            |
+| **Overdrive Voltage (Vov)** | \( V_{ov} = V_{GS} - V_{th} \)              | 0.2V            |
+| **Min Input Voltage (Vin_CM min)** | \( V_{in,CM(min)} = V_p + V_{th} \)  | 0.897V          |
+| **Max Input Voltage (Vin_CM max)** | \( V_{in,CM(max)} = V_{out,CM} + V_{th} \) | 1.597V          |
+| **Min Output Voltage (Vout min)** | \( V_{out,CM(min)} = V_{ov} + V_p \) | 0.903V          |
+| **Max Output Voltage (Vout max)** | \( V_{out,CM(max)} = V_{DD} \)       | 2V              |
+| **Transconductance (gm)** | \( g_m = \frac{2I_D}{V_{ov}} \)                | 2.5mS           |
+| **Voltage Gain (Av)** | \( A_v = - g_m \times R_D \)                  | -9 V/V          |
+| **Gain in dB (Av dB)** | \( A_v(dB) = 20 \log | A_v | \)             | 19.08 dB        |
+
+
  
 ### CIRCUIT - 1 { RESISTIVE LOAD DIFFERENTIAL AMPLIFIER }
 ![Screenshot 2025-03-06 195034](https://github.com/user-attachments/assets/049080c4-bcfb-4a86-a378-5e590e05fa77)
