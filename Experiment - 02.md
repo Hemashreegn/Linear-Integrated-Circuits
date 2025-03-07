@@ -69,27 +69,27 @@ Also extract the following parameters:
 - **Overdrive voltage**\
   Vov=Vgs-Vth\
   Vov=Vg-Vs-Vth\
-  Vov=Vin-Vp-Vth
+  Vov=Vin-Vp-Vth\
   Vov=1-0.4-0.4\
   `Vov=0.2`
 
 - **Input swing**
-  - **Minimum input**
+  - **Minimum input**\
     Vin(cm)_min=Vp+Vth\
     Vin(cm)_min=0.4+0.497\
     `Vin(cm)_min=0.897V`
     
-  - **Maximum input**
+  - **Maximum input**\
     Vin(cm)_max=Vo(cm)+Vth\
     Vin(cm)_max=1.1+0.497\
     `Vin(cm)_min=1.597V`
 
-  - **Minimum output**
+  - **Minimum output**\
     Vo(cm)_min=Vov+Vp\
     Vo(cm)_min=0.503+0.4\
     `Vo(cm)_min=0.903V`
     
-  - **Maximum output**
+  - **Maximum output**\
     Vo(cm)_max=Vdd\
     `Vo(cm)_max=2V`
     
@@ -124,20 +124,23 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - Id1 , Id2 , Iss are obtained same as theoretical values.
 
  Now increase Vin(cm) as 1.1V
-  ![image](https://github.com/user-attachments/assets/fd2d6710-b6a5-4041-be1e-a6de5a118697)
+![image](https://github.com/user-attachments/assets/fd2d6710-b6a5-4041-be1e-a6de5a118697)
 
   - We can observe increase in current Iss across resistor Rss leading to increase in drain current Id and decrease in output voltage Vout.
 
  Further increase Vin(cm) as 1.2V
-  ![image](https://github.com/user-attachments/assets/f02d113b-d5cf-431b-bb0c-fdf148df6040)
+![image](https://github.com/user-attachments/assets/f02d113b-d5cf-431b-bb0c-fdf148df6040)
 
   - Here Iss and Id current increases more and Vout decreases.
 
-    | **\( Vin(cm)\) (V)** | **\( Iss \) (mA)** | **\( Id1\) (mA)** | **\( Id2 \) (mA)** | **\( Vout1 \) (V)** | **\( Vout2 \) (V)** |
+#### Comparision Table for Different Vin(cm)
+
+| **\( V_{in,CM} \) (V)** | **\( I_{SS} \) (mA)** | **\( I_D1 \) (mA)** | **\( I_D2 \) (mA)** | **\( V_{out1} \) (V)** | **\( Vout2 \) (V)** |
 |------------------|-------------|--------------|--------------|--------------|--------------|
-| 1.0              | 0.000500          | 0.000250          | 0.000250           | 1.1          | 1.1         |
-| 1.1              | 0.0005988         | 0.000299          | 0.000299           | 0.922        | 0.922       |
-| 1.2              | 0.000693          | 0.0003465         | 0.0003465          | 0.7522       | 0.7522      |
+| 1.0              | 0.000500    | 0.000250    | 0.000250    | 1.1          | 1.1          |
+| 1.1              | 0.0005988   | 0.000299    | 0.000299    | 0.922        | 0.922        |
+| 1.2              | 0.000693    | 0.0003465   | 0.0003465   | 0.7522       | 0.7522       |
+
 
 
 
