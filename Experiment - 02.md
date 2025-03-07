@@ -119,9 +119,10 @@ Above circuit depecits the two common source amplifier having same Vdd connected
 - Id1 , Id2 , Iss are obtained same as theoretical values.
 
 ### TRANSIENT ANALYSIS
-- ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
+-
+   ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
 
-- When input Vin1=1V with amplitude=50mV and frequency=1kHz and input Vin2=1V with amplitude=50mV and frequency=1kHz with phi(deg)=180.i.e.,\
+- When input Vin1=1V with amplitude=50mV and frequency=1kHz and input Vin2=1V with amplitude=50mV and frequency=1kHz with phi(deg)=180.i.e.,
 
    Vin1 = 1 + 50m sin(2pi 1000t) and Vin2 = 1 - 50m sin(2pi 1000t) then\
    Vin(diff) = Vin1 - Vin2\
@@ -132,11 +133,7 @@ Above circuit depecits the two common source amplifier having same Vdd connected
    `Vout = 900m sin(2pi 1000t)`
   
     Then we get,\
-    `Vout(min) = 0.65V` and `Vout(max) = 1.55V`
-  
-     Vout swing = (1.55 - 0.65) = 0.9V\
-     Vout(p-p) swing = 2 * 0.9\
-     `Vout(p-p) swing = 1.8V`
+    `Vout(min) = 0.65V` , `Vout(max) = 1.55V` and `Vout(p-p) swing = 1.8V`
   
  ### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/2236ef15-54a3-4e92-9d57-2e6a49b46954)
