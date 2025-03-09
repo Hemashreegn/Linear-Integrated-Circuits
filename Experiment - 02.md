@@ -152,7 +152,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
   
 
 ### **CIRCUIT - 3 { NMOS TAIL CURRENT SOURCE DIFFERENTIAL AMPLIFIER }** 
-  ![IMG_20250303_075023.jpg](https://github.com/user-attachments/assets/21cf9887-ac19-4ed6-ad8b-eb4617dbc46f)
+![Screenshot 2025-03-09 124502](https://github.com/user-attachments/assets/7c0e296f-429b-42d2-834b-bdb1a1a66654)
 
   The above figure shows the MOS differential-pair configuration with current source replaced by MOSFET. It consists of two matched transistors, Q1 and Q2, whose sources are joined together and biased by a 180nm technology MOSFET M3. 
 
@@ -161,19 +161,21 @@ The differential pair is all about balance. Thus, for optimal performance the re
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
   - Run simulation. 
 
-![Screenshot 2025-03-06 214828](https://github.com/user-attachments/assets/6c9b253a-8b4b-4e34-9f8d-fa41f9123316)
+![Screenshot 2025-03-09 131039](https://github.com/user-attachments/assets/5ed2e84b-db3f-483e-8622-93cb6d4144dc)
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm & width=19.3625um for both the MOSFETs M1 & M2
-- Length=180nm & width=14.1579um for MOSFET M3 to obtain Q-point.
+- Length=180nm & width=14.15645um for MOSFET M3 to obtain Q-point.
 - Vb is calculated as follows:
   Vgd<=Vth (Condition for M3 to be in saturation region)\
   Vb-Vp<=Vth\
   Vb<=Vth+Vp\
-  Vb<=0.4+0.4\
-  `Vb<=0.8V`
+  Vb<=0.497+0.4\
+  Vb<=0.897V
+  So at `Vb=0.682V`(Vb<0.897) we can obtained the operating point.
 
  ### TRANSIENT ANALYSIS
-![IMG-20250303-WA0015.jpg](https://github.com/user-attachments/assets/49aeb12b-46c8-4b31-b765-deded5d45014)
+![image](https://github.com/user-attachments/assets/ea675250-16d1-4808-9302-735959327848)
+
 
 ### AC ANALYSIS
 ![image](https://github.com/user-attachments/assets/6838bcb6-bc38-4022-bf9c-d4d7897f6e56)
