@@ -48,16 +48,13 @@ Also extract the following parameters:
 
 - Both M1 and M2 transistors are **nMOS** transistors with **180nm** technology.
 
-| **Calculation**        | **Formula / Expression**                             | **Value**            |
+| **Calculation**        | **Formula**                             | **Value**            |
 |-----------------------|-------------------------------------------------|------------------|
 | **Tail Current (Iss)**  |  Iss = P/Vdd                 | 0.5mA           |
-| **Drain Current (Id)**  |  Id = Iss/2                     | 0.25mA          |
 | **Tail Resistance (Rss)** |  Rss = Vp/Iss               | 800Ω            |
+| **Drain Current (Id)**  |  Id = Iss/2                     | 0.25mA          |
+| **Load Resistance (Rd)** |  Rd = Vdd - Vo(cm)/Id               | 3.6kΩ            |
 | **Overdrive Voltage (Vov)** |  Vov = Vgs - Vth              | 0.2V            |
-| **Min Input Voltage (Vin_CM min)** |  Vin(cm)_min = Vp + Vth   | 0.897V          |
-| **Max Input Voltage (Vin_CM max)** |  Vin(cm)_max = Vo(cm) + Vp  | 1.597V          |
-| **Min Output Voltage (Vout min)** | Vo(cm)_min = Vov + Vp  | 0.903V          |
-| **Max Output Voltage (Vout max)** | Vo(cm)_max = Vdd        | 2V              |
 | **Transconductance (gm)** | gm = 2Id/Vov                 | 2.5mS           |
 | **Voltage Gain (Av)** | Av = - gm * Rd                  | -9 V/V          |
 | **Gain in dB (Av dB)** | Av(dB) = 20(log(Av))             | 19.08 dB        |
@@ -99,21 +96,14 @@ Further increase Vin(cm) as 1.2V
 | 1.1              | 0.0005988   | 0.000299    | 0.000299    | 0.922        | 0.922        |
 | 1.2              | 0.000693    | 0.0003465   | 0.0003465   | 0.7522       | 0.7522       |
 
+- This proves that **Current(Iss/Id)** is dependent on **Vgs** in saturation region and **Vout** decreases as **current** increases.
+
 
 ### TRANSIENT ANALYSIS
 
 - When input Vin1=1V with amplitude=50mV and frequency=1kHz and input Vin2=1V with amplitude=50mV and frequency=1kHz with phi(deg)=180.i.e.,
-
-   Vin1 = 1 + 50m sin(2pi 1000t) and Vin2 = 1 - 50m sin(2pi 1000t) then\
-   Vin(diff) = Vin1 - Vin2\
-   `Vin(diff) = 100m sin(2pi 1000t)`
-
-   Vout = Av * Vin(diff)\
-   Vout = 9 * 100m sin(2pi 1000t)\
-   `Vout = 900m sin(2pi 1000t)`
-  
-    Then we get,\
-    `Vout(min) = 0.65V` , `Vout(max) = 1.55V` and `Vout(p-p) swing = 1.8V`
+  Then we get,\
+  `Vout(min) = 0.65V` , `Vout(max) = 1.55V` and `Vout(p-p) swing = 0.9V`
   
 ![image](https://github.com/user-attachments/assets/745ed452-305d-4c43-abff-5fdcc857bb04)
 
