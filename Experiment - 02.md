@@ -111,12 +111,12 @@ Further increase Vin(cm) as 1.2V
   `Av=8.8V/V`
 
 
- - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
+ - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained maximum swing.
 
 ![image](https://github.com/user-attachments/assets/dbc0cefc-2110-4d05-8581-c01f3afa4de3)
 
 
- - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained Vout(min) =     V , Vout(max) =     V and Vout(p-p) swing =    V.
+ - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained minimum swing.
 
 ![image](https://github.com/user-attachments/assets/156ee029-adb0-4f21-bba8-012b6a4b2f2b)
 
@@ -196,7 +196,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
 - **Bandwidth=4.316Ghz** 
 - There is no change in gain from circuit 1 & 2.
 
-### **CIRCUIT - 3 { ACTIVE LOAD DIFFERENTIAL AMPLIFIER }**
+### **CIRCUIT - 4 { ACTIVE LOAD DIFFERENTIAL AMPLIFIER }**
 
   The above figure shows the MOS differential-pair configuration with current source replaced by NMOSFET. It consists of two matched transistors, M1 and M2, whose sources are joined together and biased by a 180nm technology NMOSFET M3.Also load resistor(Rd) is replaced by a 180nm technology PMOSFET M4 and M5. 
 
@@ -205,7 +205,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
   - Run simulation. 
 
-![Screenshot 2025-03-09 210712](https://github.com/user-attachments/assets/f73e5de9-ccd2-47bb-99fd-1e3ce4d266b0)![Screenshot 2025-03-09 210731](https://github.com/user-attachments/assets/8fc1cb1a-2082-49e5-b4a8-d9b3934ec7c9)
+![Screenshot 2025-03-09 210712](https://github.com/user-attachments/assets/f73e5de9-ccd2-47bb-99fd-1e3ce4d266b0)  ![Screenshot 2025-03-09 210731](https://github.com/user-attachments/assets/8fc1cb1a-2082-49e5-b4a8-d9b3934ec7c9)
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm & width=19.3625um for both the MOSFETs M1 & M2
 - Length=180nm & width=14.15791um for MOSFET M3 to obtain Q-point.
