@@ -139,8 +139,8 @@ The differential pair is all about balance. Thus, for optimal performance the re
   - Connect the circuit.
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
   - Run simulation.
-  - 
-![Uploading Screenshot 2025-03-07 014917.png…]()
+    
+![Screenshot 2025-03-09 131039](https://github.com/user-attachments/assets/390910f0-d5fd-4fe2-aa46-3c0ff4cd4e4d)
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm and width=19.3625um for both the MOSFETs.
 - No changes will be caused by change in resistor load to current source as both MOSFETs balances the values. 
@@ -205,7 +205,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
   - Adjust the length and width of both M1 and M2 transistors to obtain operating point.
   - Run simulation. 
 
-![Screenshot 2025-03-09 210712](https://github.com/user-attachments/assets/f73e5de9-ccd2-47bb-99fd-1e3ce4d266b0)  ![Screenshot 2025-03-09 210731](https://github.com/user-attachments/assets/8fc1cb1a-2082-49e5-b4a8-d9b3934ec7c9)
+![Screenshot 2025-03-09 210712](https://github.com/user-attachments/assets/f73e5de9-ccd2-47bb-99fd-1e3ce4d266b0)   ![Screenshot 2025-03-09 210731](https://github.com/user-attachments/assets/8fc1cb1a-2082-49e5-b4a8-d9b3934ec7c9)
 
 - Operating point (1.1V , 0.25mA) is obtained at length=180nm & width=19.3625um for both the MOSFETs M1 & M2
 - Length=180nm & width=14.15791um for MOSFET M3 to obtain Q-point.
@@ -219,9 +219,13 @@ The differential pair is all about balance. Thus, for optimal performance the re
   So at `Vb=0.59V`(Vb<1.503) we can obtained the operating point.
 
  ### TRANSIENT ANALYSIS
+![image](https://github.com/user-attachments/assets/ed09f975-0c9c-43c1-8e20-8404ad815130)
+
+- We can observe the waveforms with amplitude=15mV.
+
 ![image](https://github.com/user-attachments/assets/aa2a0467-5a54-49d9-8217-9552da52baaa)
 
--We can observe there is more shift in shape of output in this stage.
+-We can observe there is more shift in shape of output when amplitude=50mV in this stage.
 
 ### AC ANALYSIS
 ![Screenshot 2025-03-09 222054](https://github.com/user-attachments/assets/5fea6d7b-0dfd-4a30-9a1a-50c4f5baf2dc)
@@ -229,7 +233,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
 - Gain obtained is 22dB\
 - 3dB frequency (22db-3dB=19dB) is found out to be 1.477GHz.
 - **Bandwidth=1.477Ghz**
-- Gain increases as , **gm** is proportional to **\( I_d \)**  √I_D.
+- Gain increases as , **gm** is proportional to **√I_d**.
 
 #### Inference 
 This table compares the **DC, Transient, and AC Analysis** for different types of Differential Amplifiers.
@@ -241,6 +245,7 @@ This table compares the **DC, Transient, and AC Analysis** for different types o
 | **NMOS Tail Current Source**              | Good bias stability, requires proper NMOS biasing.          | Faster transient response due to lower resistance.          | High gain due to higher output resistance.               | High CMRR as NMOS tail helps reject common-mode signals.  | Higher bandwidth due to NMOS current source.             |
 | **Active Load Differential Amp**          | Best biasing stability, least power consumption.            | Fastest transient response due to high output impedance.   | Highest gain due to active load (large \(R_{out}\)).     | Best CMRR as active loads provide high impedance.        | Highest bandwidth due to active load with high impedance. |
 
+- The output and gain using transient analysis & AC analysis obtained in all circuits is almost same as the all the replaced componenets are balancing the circuit giving same output.
 
 
 
