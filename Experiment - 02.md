@@ -146,7 +146,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
 - No changes will be caused by change in resistor load to current source as both MOSFETs balances the values. 
 
 ### TRANSIENT ANALYSIS
-![IMG_20250303_135129.jpg](https://github.com/user-attachments/assets/205ec111-bf04-4652-8462-0c88cc481ee7)
+![image](https://github.com/user-attachments/assets/6bdf2f0a-a8dc-46b8-b9e4-e41121d6b4ff)
 
 - Gain obtained using Vout and Vin is, Av=Vout/Vin=(1.535-0.655)/(1.05-0.95)=0.88/0.1=8.8V/V\
   `Av=8.8V/V`
@@ -212,9 +212,9 @@ The differential pair is all about balance. Thus, for optimal performance the re
 - Vb is calculated as follows:
   Vsg>=Vth (Condition for M3 to be in saturation region)\
   Vs-Vg>=Vth\
-  -Vg<=Vth-Vs\
-  -Vg<=0.497-2\
-  -Vb<=-1.503V\
+  Vg<=Vth-Vs\
+  Vg<=0.497-2\
+  Vb<=-1.503V\
   Vb<=1.503V\
   So at `Vb=0.59V`(Vb<1.503) we can obtained the operating point.
 
