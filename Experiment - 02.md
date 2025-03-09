@@ -111,14 +111,14 @@ Further increase Vin(cm) as 1.2V
   `Av=8.8V/V`
 
 
- - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained maximum swing.
+ - When **Vin(cm)_min = 0.897** is given as Vin1=1V with amplitude=-103mV and frequency=1kHz and input Vin2=1V with amplitude=-103mV and frequency=1kHz with phi(deg)=180 we obtained minimum swing of 1.12V upto 1.76V.
 
-![image](https://github.com/user-attachments/assets/dbc0cefc-2110-4d05-8581-c01f3afa4de3)
+![image](https://github.com/user-attachments/assets/4870a995-505f-4d9f-bd6b-63bb73bd420c)
 
 
- - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained minimum swing.
+ - When **Vin(cm)_max = 1.597** is given as Vin1=1V with amplitude=597mV and frequency=1kHz and input Vin2=1V with amplitude=597mV and frequency=1kHz with phi(deg)=180 we obtained maximum swing of 1.2V upto Vdd(2V).
 
-![image](https://github.com/user-attachments/assets/156ee029-adb0-4f21-bba8-012b6a4b2f2b)
+![image](https://github.com/user-attachments/assets/829311cc-8f4a-4fbf-bd7d-a674c826fb54)
 
 
  ### AC ANALYSIS
@@ -225,7 +225,7 @@ The differential pair is all about balance. Thus, for optimal performance the re
 
 ![image](https://github.com/user-attachments/assets/aa2a0467-5a54-49d9-8217-9552da52baaa)
 
--We can observe there is more shift in shape of output when amplitude=50mV in this stage.
+- We can observe there is more shift in shape of output when amplitude=50mV in this stage.
 
 ### AC ANALYSIS
 ![Screenshot 2025-03-09 222054](https://github.com/user-attachments/assets/5fea6d7b-0dfd-4a30-9a1a-50c4f5baf2dc)
