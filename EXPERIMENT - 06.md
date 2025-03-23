@@ -38,11 +38,65 @@
 | Drain Current | Id = I_total/2    | 0.37037mA   | Drain current of M1 and M2                |
 
 ### DC ANALYSIS
-
-
-#### 1:1 CURRENT MIRROR
-![dc_1](https://github.com/user-attachments/assets/af6f0faf-06fd-4dbd-b556-b407191ca364)
+- Make the circuit as per the designed specifications.
+- Give the length and width for the MOSFETS M1, M2, M3.
+- Go to the simulation ->operating point ->place the .op extension.
+- Run the simulation.
+- You will find all the voltages and current flowing in the circuit, adjust the width untill obtaining the required operating point.
+- Compare the obtained result with the designed values and ensure if the values match for the given length and width of the MOSFET.
  
+### 1:1 CURRENT MIRROR
+ The current present in M2 transistor will be same as M3 transistor with same (W/L) ratio for both MOSFETs and (W/L) ratio will be different for M1 transistor to obtain the required current.
+ 
+![image](https://github.com/user-attachments/assets/b7a6af4b-f1b3-4641-9608-adaac89313f8)
+
+![dc_2](https://github.com/user-attachments/assets/c98c969f-7eb6-4dac-a082-3ff067a917fc)
+
+- Operating point **(1.1585V , 0.22778mA)** is obtained at **length=180nm and width=50um** for MOSFET **M2 & M3** and **length=180nm and width=18.255682um** for MOSFET **M1**.
+- I_ref & Id obtained are same as theoretical values.
+
+### 1:2 CURRENT MIRROR
+ The current present in M3 transistor will be doble the current in M2 transistor with 1:2 (W/L) ratio for the MOSFETs and (W/L) ratio will be different for M1 transistor to obtain the required current.
+ 
+![2_1_dc1](https://github.com/user-attachments/assets/1b665334-51c0-44ea-a076-24a855b11e7b)
+
+![2_1_dc2](https://github.com/user-attachments/assets/a979bd1c-183f-4f56-a11a-d767d7441f7e)
+
+- The **1:2** ratio current is obtained at **length=180nm and width=50um** for MOSFET **M3**, **length=180nm and width=100um** for MOSFET **M2** and **length=180nm and width=24.3142um** for MOSFET **M1**.
+- Id is twice of I_ref, currents are obtained same as expected values.
+
+### WHAT IF LENGTH IS CHANGED?
+
+ - If length is increased from 180nm to 500nm for M2 & M3 then we can observe slight variation in current and output voltage.
+  ![length_500n](https://github.com/user-attachments/assets/61e9e9d9-3a89-4827-a0b9-ae6697f66ca7)
+
+ - If length is increased from 500nm to 1um for M2 & M3 then we can observe slight variation in current and output voltage.
+  ![Length_1u](https://github.com/user-attachments/assets/ecfee0ad-8ad4-4fb2-a84f-3fd611aad7a2)
+
+### COMPARISION 
+
+## Comparison Table for Different L Values
+
+| **Parameter** | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
+|-------------|----------------|----------------|----------------|-----------|
+| **I_ref(Reference Current)** | 0.2778µA | 0.2778µA | 0.2778µA | 
+| **I_d(Expected Drain Current)** | 0.2778µA | 0.2778µA | 0.277801µA | 
+| **I_d(Obtained Drain Current)** | 0.2778µA | 0.275951µA | 0.274898µA | 
+| **(W/L)of M1(Common-source amplifier NMOS transisto)** | 180nm/18.255682um | 180nm/18.255682um | 180nm/18.255682um |
+| **(W/L)of M2(Current mirror load PMOS transistor)** | 180nm/50nm | 500nm/50nm | 1um/50nm | 
+| **(W/L) of M3(Diode-connected reference transistor)** | 180nm/50nm | 500nm/nm | 1u/50n | 
+| **V_out1(Output Voltage across M3)** | 1.1581V | 1.13825V | 0.931431V |
+| **V_out2(Output Voltage across M2)** | 1.1581V |   1.06536V  | 1.12669V | 
+| **Remarks** | High λ effect,Poor mirroring, low output resistance, lower gain | Improved mirroring, moderate gain | Best mirroring, highest gain, lowest bandwidth |
+
+
+### TRANSIENT ANALYSIS 
+
+
+
+
+
+
 
 
 
