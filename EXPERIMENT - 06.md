@@ -75,16 +75,18 @@
 
 ### COMPARISION TABLE
 
-| **Parameter** | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
-| **I_ref(Reference Current)** | 0.2778µA | 0.2778µA | 0.2778µA | 
-| **I_d(Expected Drain Current)** | 0.2778µA | 0.2778µA | 0.277801µA | 
-| **I_d(Obtained Drain Current)** | 0.2778µA | 0.275951µA | 0.274898µA | 
-| **(W/L)of M1(Common-source amplifier NMOS transisto)** | 180nm/18.255682um | 180nm/18.255682um | 180nm/18.255682um |
-| **(W/L)of M2(Current mirror load PMOS transistor)** | 180nm/50nm | 500nm/50nm | 1um/50nm | 
-| **(W/L) of M3(Diode-connected reference transistor)** | 180nm/50nm | 500nm/nm | 1u/50n | 
-| **V_out1(Output Voltage across M3)** | 1.1581V | 1.13825V | 0.931431V |
-| **V_out2(Output Voltage across M2)** | 1.1581V |   1.06536V  | 1.12669V | 
-| **Remarks** | High λ effect,Poor mirroring, low output resistance, lower gain | Improved mirroring, moderate gain | Best mirroring, highest gain, lowest bandwidth |
+| **Parameter**                                  | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
+|-----------------------------------------------|----------------------|----------------------|----------------------|
+| **I_ref (Reference Current)**                 | 0.2778µA             | 0.2778µA             | 0.2778µA             |
+| **I_d (Expected Drain Current)**              | 0.2778µA             | 0.2778µA             | 0.277801µA           |
+| **I_d (Obtained Drain Current)**              | 0.2778µA             | 0.275951µA           | 0.274898µA           |
+| **(W/L) of M1 (Common-source amplifier NMOS)**| 180nm / 18.255682µm  | 180nm / 18.255682µm  | 180nm / 18.255682µm  |
+| **(W/L) of M2 (Current mirror load PMOS)**    | 180nm / 50nm         | 500nm / 50nm         | 1µm / 50nm           |
+| **(W/L) of M3 (Diode-connected reference PMOS)** | 180nm / 50nm      | 500nm / 50nm         | 1µm / 50nm           |
+| **V_out1 (Output Voltage across M3)**         | 1.1581V              | 1.13825V             | 0.931431V            |
+| **V_out2 (Output Voltage across M2)**         | 1.1581V              | 1.06536V             | 1.12669V             |
+| **Remarks**                                   | High λ effect, poor mirroring, low output resistance, lower gain | Improved mirroring, moderate gain | Best mirroring, highest gain, lowest bandwidth |
+
 
 
 ### TRANSIENT ANALYSIS 
