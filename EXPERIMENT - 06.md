@@ -21,7 +21,13 @@
 
 ![Current_mirror](https://github.com/user-attachments/assets/4fdb0a0a-4930-428f-bfa9-f101cf96256e)
 
-- I_total = I_ref + Id/
-  where total current = \*I_total = Vdd/Power*\
+I_total = 0.5556mA   # Total circuit current
+I_ref   = 0.278mA    # Reference current for the mirror
+I_D     = 0.278mA    # Drain current of M1
+
+  
+
+
+        
 
 
