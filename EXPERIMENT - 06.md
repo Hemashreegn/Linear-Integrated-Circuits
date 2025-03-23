@@ -73,7 +73,60 @@
  - If length is increased from 500nm to 1um for M2 & M3 then we can observe slight variation in current and output voltage.
   ![Length_1u](https://github.com/user-attachments/assets/ecfee0ad-8ad4-4fb2-a84f-3fd611aad7a2)
 
-### COMPARISION TABLE
+### TRANSIENT ANALYSIS 
+ - After getting the required operating points from the DC Analysis, right click on the input voltages ->advanced ->sinusoidal and give the specified DC voltage, amplitude and frequency.
+ - Go the transient analysis part and give the required stop time as 3ms.
+ - Run the simulation.
+ - Calculate Vout/Vin./
+
+#### For LENGTH = 180nm
+ ![transient_1](https://github.com/user-attachments/assets/fa2230d7-9be2-4b62-8b32-b7f9419a8908)
+
+ - For length = 180nm ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
+ - We can calculate gain as, Vout/Vin = (1.4 - 0.9)/(0.61 - 0.59) = 25V/V
+ - `Av = 25 V/V`
+ - `Av(dB) = 20log(25) = 27.958 dB`
+
+#### For LENGTH = 500nm
+ ![image](https://github.com/user-attachments/assets/3ef47447-5c7d-4534-a501-2e2e7203e969)
+
+ - For length = 500nm ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
+ - We can calculate gain as, Vout/Vin = (1.435 - 0.818)/(0.61 - 0.59) = 25V/V
+ - `Av = 25 V/V`
+ - `Av(dB) = 20log(25) = 27.958 dB`
+
+#### For LENGTH = 1um
+![image](https://github.com/user-attachments/assets/6fbca038-c026-4aed-9e77-758d6fea120d)
+
+ - For length = 1um ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
+ - We can calculate gain as, Vout/Vin = (1.435 - 0.784)/(0.61 - 0.59) = 30.85V/V
+ - `Av = 30.85 V/V`
+ - `Av(dB) = 20log(30.85) = 29.785 dB`
+
+### AC ANALYSIS
+ - Right click on the voltage ->Advanced, give AC amplitude as 1.
+ - Go to the AC analysis part and run the simulation.
+ - The frequency response will appear and calculate 3dB bandwidth.
+
+#### For LENGTH = 180nm
+ ![gain_180nm](https://github.com/user-attachments/assets/d4d07824-71f7-4baa-8e0c-17b047eb79c1)
+ - Gain obtained is 28.032dB
+ - 3dB frequency (28.032db-3dB=25.032dB) is found out to be 308.87MHz./
+  `Bandwidth = 308.87MHz`
+
+#### For LENGTH = 500nm
+ ![gain_500nm](https://github.com/user-attachments/assets/d754f6a0-f8ea-4964-a0ac-4e10b87c3d26)
+ - Gain obtained is 30.062dB
+ - 3dB frequency (30.062-3dB=27.062dB) is found out to be 214.17MHz./
+  `Bandwidth = 214.17MHz`
+
+#### For LENGTH = 1um
+ ![gain_1u](https://github.com/user-attachments/assets/beced9c2-a377-453f-9769-83ed6acd998a)
+ - Gain obtained is 30.834dB
+ - 3dB frequency (30.834-3dB=27.834dB) is found out to be 190.807MHz./
+  `Bandwidth = 190.807MHz`
+  
+#### COMPARISION TABLE
 
 | **Parameter**                                  | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
 |-----------------------------------------------|----------------------|----------------------|----------------------|
@@ -87,9 +140,9 @@
 | **V_out2 (Output Voltage across M2)**         | 1.1581V              | 1.06536V             | 1.12669V             |
 | **Remarks**                                   | High λ effect, poor mirroring, low output resistance, lower gain | Improved mirroring, moderate gain | Best mirroring, highest gain, lowest bandwidth |
 
+### HOW CURRENT MIRRORS FOR DIFFERENT RATIOS
 
 
-### TRANSIENT ANALYSIS 
 
 
 
