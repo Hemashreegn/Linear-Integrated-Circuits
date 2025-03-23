@@ -73,12 +73,9 @@
  - If length is increased from 500nm to 1um for M2 & M3 then we can observe slight variation in current and output voltage.
   ![Length_1u](https://github.com/user-attachments/assets/ecfee0ad-8ad4-4fb2-a84f-3fd611aad7a2)
 
-### COMPARISION 
-
-## Comparison Table for Different L Values
+### COMPARISION TABLE
 
 | **Parameter** | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
-|-------------|----------------|----------------|----------------|-----------|
 | **I_ref(Reference Current)** | 0.2778µA | 0.2778µA | 0.2778µA | 
 | **I_d(Expected Drain Current)** | 0.2778µA | 0.2778µA | 0.277801µA | 
 | **I_d(Obtained Drain Current)** | 0.2778µA | 0.275951µA | 0.274898µA | 
