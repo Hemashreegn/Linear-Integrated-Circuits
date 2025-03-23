@@ -21,9 +21,31 @@
 
 ![Current_mirror](https://github.com/user-attachments/assets/4fdb0a0a-4930-428f-bfa9-f101cf96256e)
 
-I_total = 0.5556mA   # Total circuit current
-I_ref   = 0.278mA    # Reference current for the mirror
-I_D     = 0.278mA    # Drain current of M1
+#### DESIGN FOR 1:1 CURRENT MIRROR RATIO
+
+| Current Name | Symbol   | Value     | Description                          |
+|-------------|---------|-----------|--------------------------------------|
+| Total Current | I_total = I_ref + Id | 0.5556mA  | Total circuit current               |
+| Reference Current | I_ref =  I_total/2    | 0.2778mA   | Reference current for the mirror    |
+| Drain Current | Id = I_total/2    | 0.2778mA   | Drain current of M1 and M2                |
+
+#### DESIGN FOR 1:2 CURRENT MIRROR RATIO
+
+| Current Name | Symbol   | Value     | Description                          |
+|-------------|---------|-----------|--------------------------------------|
+| Total Current |  I_total = I_ref + Id  | 0.5556mA  | Total circuit current               |
+| Reference Current | I_ref =  I_total/2   | 0.185185mA   | Reference current for the mirror    |
+| Drain Current | Id = I_total/2    | 0.37037mA   | Drain current of M1 and M2                |
+
+### DC ANALYSIS
+
+
+#### 1:1 CURRENT MIRROR
+![dc_1](https://github.com/user-attachments/assets/af6f0faf-06fd-4dbd-b556-b407191ca364)
+ 
+
+
+
 
   
 
