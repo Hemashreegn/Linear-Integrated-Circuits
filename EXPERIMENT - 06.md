@@ -10,15 +10,18 @@
 
  ![Screenshot 2025-03-23 223630](https://github.com/user-attachments/assets/b47c2297-334c-4920-9d6d-6c4f73bea3f4)
 
-     - **Gain(Av)** > -10V/V
-     - **Power supply(Vdd)** = 1.8V
-     - **Power(P)** <= 1mW
+  - **Gain(Av)** > -10V/V
+  - **Power supply(Vdd)** = 1.8V
+  - **Power(P)** <= 1mW
 
-### CIRCUIT 
+### CIRCUIT & CALCULATION
  - PMOS current mirror (M2, M3) as an active load.
  - NMOS common-source amplifier (M1).
  - Golden reference current source (I_ref) for biasing.
 
 ![Current_mirror](https://github.com/user-attachments/assets/4fdb0a0a-4930-428f-bfa9-f101cf96256e)
+
+- I_total = I_ref + Id/
+  where total current = \*I_total = Vdd/Power*\
 
 
