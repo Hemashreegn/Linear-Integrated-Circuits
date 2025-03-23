@@ -128,6 +128,8 @@
   
 #### COMPARISION TABLE
 
+## Comparison Table for Different L Values
+
 | **Parameter**                                  | **Case 1: L = 180nm** | **Case 2: L = 500nm** | **Case 3: L = 1µm** |
 |-----------------------------------------------|----------------------|----------------------|----------------------|
 | **I_ref (Reference Current)**                 | 0.2778µA             | 0.2778µA             | 0.2778µA             |
@@ -138,7 +140,10 @@
 | **(W/L) of M3 (Diode-connected reference PMOS)** | 180nm / 50nm      | 500nm / 50nm         | 1µm / 50nm           |
 | **V_out1 (Output Voltage across M3)**         | 1.1581V              | 1.13825V             | 0.931431V            |
 | **V_out2 (Output Voltage across M2)**         | 1.1581V              | 1.06536V             | 1.12669V             |
+| **Gain (Av) in dB**                           | 28.032dB             | 30.062dB             | 30.834dB             |
+| **Bandwidth**                                 | 308.87MHz            | 214.17MHz            | 190.807MHz           |
 | **Remarks**                                   | High λ effect, poor mirroring, low output resistance, lower gain | Improved mirroring, moderate gain | Best mirroring, highest gain, lowest bandwidth |
+
 
 ### HOW CURRENT MIRRORS FOR DIFFERENT RATIOS
 
