@@ -89,7 +89,7 @@
  - After getting the required operating points from the DC Analysis, right click on the input voltages ->advanced ->sinusoidal and give the specified DC voltage, amplitude and frequency.
  - Go the transient analysis part and give the required stop time as 3ms.
  - Run the simulation.
- - Calculate Vout/Vin./
+ - Calculate Vout/Vin.
 
 #### For LENGTH = 180nm
 
@@ -212,9 +212,36 @@ Obtained the exact mirroring at L=180nm, W=100um for M3, L=180nm, W=50um for M2 
    I_ref = Iss\
    `I_ref = 0.5mA`
 
+### DC ANALYSIS
+- Make the circuit as per the designed specifications.
+- Give the length and width for the MOSFETS M1, M2, M3.
+- Go to the simulation ->operating point ->place the .op extension.
+- Run the simulation.
+- You will find all the voltages and current flowing in the circuit, adjust the width untill obtaining the required operating point.
+- Compare the obtained result with the designed values and ensure if the values match for the given length and width of the MOSFET.
+
+  ![Screenshot 2025-03-24 110707](https://github.com/user-attachments/assets/69541e30-d276-436f-920f-7bf1f5c60adb)
+
+  The required current is obtained at **length=180nm and width=25um** for MOSFET **M5** & **M6**, **length=180nm and width=10um** for MOSFET **M1** & **M2** and **length=180nm and width=46.45um** for MOSFET **M3** , **length=180nm and width=23.225um** for MOSFET **M4**..
+   
+### TRANSIENT ANALYSIS 
+ - After getting the required operating points from the DC Analysis, right click on the input voltages ->advanced ->sinusoidal and give the specified DC voltage, amplitude and frequency.
+ - Go the transient analysis part and give the required stop time as 3ms.
+ - Run the simulation.
+ - Calculate Vout/Vin.
+   
+![image](https://github.com/user-attachments/assets/1d25c0ae-0036-4926-86d5-fb81e6504952)
+
+### AC ANALYSIS 
+  - Right click on the voltage ->Advanced, give AC amplitude as 1.
+ - Go to the AC analysis part and run the simulation.
+ - The frequency response will appear and calculate 3dB bandwidth.
+
+   ![image](https://github.com/user-attachments/assets/bcc5a742-ed47-4739-9454-eef5b50bd59c)
 
    
-  
+
+
 
 
 
