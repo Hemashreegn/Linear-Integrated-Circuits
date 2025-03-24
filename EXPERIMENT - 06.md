@@ -18,6 +18,18 @@
  - PMOS current mirror (M2, M3) as an active load.
  - NMOS common-source amplifier (M1).
  - Golden reference current source (I_ref) for biasing.
+ - Vin design (of NMOS),\
+    - Condition 1 : Vin >= Vth\
+      Vgs > 0.4V\
+      Vg - Vs >= 0.4V\
+      `Vg >= 0.4V`
+    - Condition 2 : Vgd <= Vth\
+      Vg - Vd <= Vth\
+      Vg <= Vth + Vd\
+      Vg <= 0.4 + 1.15V\
+      `Vg <= 1.55V`
+      Therefore Vg lies between 0.4V < Vg < 1.55V.\
+      Vg selected as 0.6 to obtain the req output parameters.
 
 ![Current_mirror](https://github.com/user-attachments/assets/4fdb0a0a-4930-428f-bfa9-f101cf96256e)
 
@@ -80,6 +92,7 @@
  - Calculate Vout/Vin./
 
 #### For LENGTH = 180nm
+
  ![transient_1](https://github.com/user-attachments/assets/fa2230d7-9be2-4b62-8b32-b7f9419a8908)
 
  - For length = 180nm ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
@@ -88,6 +101,7 @@
  - `Av(dB) = 20log(25) = 27.958 dB`
 
 #### For LENGTH = 500nm
+
  ![image](https://github.com/user-attachments/assets/3ef47447-5c7d-4534-a501-2e2e7203e969)
 
  - For length = 500nm ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
@@ -96,6 +110,7 @@
  - `Av(dB) = 20log(25) = 27.958 dB`
 
 #### For LENGTH = 1um
+
 ![image](https://github.com/user-attachments/assets/6fbca038-c026-4aed-9e77-758d6fea120d)
 
  - For length = 1um ,width = 50um for M2 & M3 and length = 180nm, width = 18.255682um for M2 the input and output voltage is as above.
@@ -109,18 +124,21 @@
  - The frequency response will appear and calculate 3dB bandwidth.
 
 #### For LENGTH = 180nm
+
  ![gain_180nm](https://github.com/user-attachments/assets/d4d07824-71f7-4baa-8e0c-17b047eb79c1)
  - Gain obtained is 28.032dB
  - 3dB frequency (28.032db-3dB=25.032dB) is found out to be 308.87MHz./
   `Bandwidth = 308.87MHz`
 
 #### For LENGTH = 500nm
+
  ![gain_500nm](https://github.com/user-attachments/assets/d754f6a0-f8ea-4964-a0ac-4e10b87c3d26)
  - Gain obtained is 30.062dB
  - 3dB frequency (30.062-3dB=27.062dB) is found out to be 214.17MHz./
   `Bandwidth = 214.17MHz`
 
 #### For LENGTH = 1um
+
  ![gain_1u](https://github.com/user-attachments/assets/beced9c2-a377-453f-9769-83ed6acd998a)
  - Gain obtained is 30.834dB
  - 3dB frequency (30.834-3dB=27.834dB) is found out to be 190.807MHz./
@@ -147,7 +165,56 @@
 
 ### HOW CURRENT MIRRORS FOR DIFFERENT RATIOS
 
+#### 1:3 
 
+![image](https://github.com/user-attachments/assets/ab9ae78e-e500-425c-82e6-08623488d04e)
+Obtained the exact mirroring at L=180nm, W=50um for M3, L=180nm, W=150um for M2 & L=180nm, W=55.7455um for M1.
+
+#### 1:4
+
+![image](https://github.com/user-attachments/assets/1d40786e-3ae3-493b-8693-5fbd576918cb)
+Obtained the exact mirroring at L=180nm, W=50um for M3, L=180nm, W=200um for M2 & L=180nm, W=74.63um for M1.
+
+#### 1:5 
+
+![Screenshot 2025-03-24 110143](https://github.com/user-attachments/assets/cf3313c3-647a-4875-b1b3-b38f4057819f)
+Obtained the exact mirroring at L=180nm, W=50um for M3, L=180nm, W=200um for M2 & L=180nm, W=93.232um for M1.
+
+#### 2:1
+
+![image](https://github.com/user-attachments/assets/f65162bb-7e39-459b-a91e-200117f0b9be)
+Obtained the exact mirroring at L=180nm, W=100um for M3, L=180nm, W=50um for M2 & L=180nm, W=18.1952um for M1.
+
+### DESIGN PARAMETERS
+ B) Design differential amplifier using same design specifications as exp-3 for current mirror circuit.Perform DC, Transient and AC analysis of differential amplifier with the following specifications using LT Spice.
+  
+  ![image](https://github.com/user-attachments/assets/d7efe9e9-a191-44fa-ac67-a03d50921342)
+
+ - **Vdd** = 2V
+ - **Vin** = 1V
+ - **Power budget** = 1mW
+ - **Vo,cm** = 1.1V
+ - **Vp** = 0.4V
+
+### CIRCUIT & CALCULATION
+
+ ![Screenshot 2025-03-24 093047](https://github.com/user-attachments/assets/fb5d5d4b-bf91-4261-bed3-4cc1ef931429)
+
+ - Tail Current (Iss),\
+   Iss = P/Vdd\
+   `Iss = 0.5mA`
+
+ - Drain Current (Id),{current across MOSFETs M1, M2, M5, M6}\
+   Id = Iss/2\
+   `Id = 0.25mA`
+
+ - Reference current(I_ref),\
+   I_ref = Iss\
+   `I_ref = 0.5mA`
+
+
+   
+  
 
 
 
