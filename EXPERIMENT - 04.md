@@ -1,6 +1,6 @@
 # LINEAR INTEGRATED CIRCUITS
 
-## EXPERIMENT - 04 {MULTISTABLE MONOVIBRATOR}
+## EXPERIMENT - 04 {MONOSTABLE MULTIVIBRATOR}
 
 ### OBJECTIVE
    A monostable multivibrator generates a single output pulse of fixed duration in response to an external trigger. It has one stable state and temporarily switches to an unstable state before returning.
@@ -26,6 +26,10 @@ Figure (a) shows an op-amp monostable circuit & Figure (b) shows a block diagram
 --> **As the capacitor charges**, the voltage across it increases according to the equation $v_C(t) = V_{CC}(1 - e^{-t/RC})$, and the quasi-stable state persists during this charging period. Once $v_C$ reaches the threshold level $V_{TH} = \frac{2}{3}V_{CC}$, Comparator 1 outputs a high signal, resetting the flip-flop again. This causes the Q output to go low and $\overline{Q}$ to go high, turning ON the discharge transistor Q1, which rapidly discharges the capacitor back to 0 V, and the output $v_O$ drops back to low.
 
 --> **The circuit is now back in the stable state**, with the capacitor discharged and the system ready to respond to the next trigger pulse. The duration for which the output $v_O$ remains high (i.e., the width of the pulse) is the time taken by the capacitor to charge from 0 V to $\frac{2}{3}V_{CC}$, which is mathematically given by $T = RC \ln(3) \approx 1.1RC$. This time period is determined by the values of the external resistor $R$ and capacitor $C$, making it highly customizable for timing applications.
+
+### CIRCUIT & CALCULATIONS
+
+
 
 
 
