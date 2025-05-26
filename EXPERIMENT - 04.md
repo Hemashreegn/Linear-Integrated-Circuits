@@ -31,18 +31,19 @@ Figure (a) shows an op-amp monostable circuit & Figure (b) shows a block diagram
 
  ![Screenshot 2025-05-26 225814](https://github.com/user-attachments/assets/f5b3ecc0-aec9-424b-b64d-208bb17946ea)
 
- - t = 1.1* R1 *C1
-    WKT t=0.5ms
-   1.1* R1 *C1 = 0.5 * 10^-3
+ - t = 1.1* R1 *C1\
+    WKT t=0.5ms\
+   1.1* R1 *C1 = 0.5 * 10^-3\
    R1 * C1 = 0.454 * 10^-3
 
-- R1 = Vcc/(3*Imin)
-  R1 = 5/(3*10^-3)
+- R1 = Vcc/(3*Imin)\
+  R1 = 5/(3*10^-3)\
   R1=166.6k ohm
 
-- R1 * C1 = 0.454 * 10^-3
+- R1 * C1 = 0.454 * 10^-3\
   C1 = 2.72nF
-  
+
+### ANALYSIS & RESULTS
 
 
 
