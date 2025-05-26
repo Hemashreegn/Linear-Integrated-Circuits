@@ -15,8 +15,18 @@ The monostable multivibrator has one stable state in which it can remain indefin
 
 Figure (a) shows an op-amp monostable circuit & Figure (b) shows a block diagram representation of the 555 timer circuit.
 
+![image](https://github.com/user-attachments/assets/258cb8f9-3d98-487e-8a55-e537ab1b34ca)    ![image](https://github.com/user-attachments/assets/b75b2a4f-6aef-49c1-8279-97e02bf0fa39)
 
-![image](https://github.com/user-attachments/assets/258cb8f9-3d98-487e-8a55-e537ab1b34ca)  ![image](https://github.com/user-attachments/assets/b75b2a4f-6aef-49c1-8279-97e02bf0fa39)
+### WORKING
+
+  --> **In the stable state**, the internal flip-flop of the 555 timer is in the reset condition, making its Q output low and $\overline{Q}$ high, which turns ON the discharge transistor Q1. This causes the external capacitor $C$ to remain discharged with its voltage $v_C \approx 0\,V$. Since the capacitor voltage is below the threshold level ($V_{TH} = \frac{2}{3}V_{CC}$), Comparator 1 outputs a low signal. Also, with no triggering action (i.e., $v_{\text{trigger}} > V_{TL} = \frac{1}{3}V_{CC}$), Comparator 2 also stays low, keeping the flip-flop in the reset state and the output $v_O$ low.
+
+--> **When a negative trigger pulse is applied**, it causes the trigger voltage $v_{\text{trigger}}$ to drop below $V_{TL}$, causing Comparator 2 to output a high signal. This sets the internal flip-flop, making Q high and $\overline{Q}$ low, which in turn switches OFF the discharge transistor Q1 and causes the output $v_O$ to go high. The circuit now enters the quasi-stable state, and with Q1 turned off, the capacitor $C$ starts charging through the external resistor $R$, and its voltage $v_C$ begins to rise exponentially toward $V_{CC}$.
+
+--> **As the capacitor charges**, the voltage across it increases according to the equation $v_C(t) = V_{CC}(1 - e^{-t/RC})$, and the quasi-stable state persists during this charging period. Once $v_C$ reaches the threshold level $V_{TH} = \frac{2}{3}V_{CC}$, Comparator 1 outputs a high signal, resetting the flip-flop again. This causes the Q output to go low and $\overline{Q}$ to go high, turning ON the discharge transistor Q1, which rapidly discharges the capacitor back to 0 V, and the output $v_O$ drops back to low.
+
+--> **The circuit is now back in the stable state**, with the capacitor discharged and the system ready to respond to the next trigger pulse. The duration for which the output $v_O$ remains high (i.e., the width of the pulse) is the time taken by the capacitor to charge from 0 V to $\frac{2}{3}V_{CC}$, which is mathematically given by $T = RC \ln(3) \approx 1.1RC$. This time period is determined by the values of the external resistor $R$ and capacitor $C$, making it highly customizable for timing applications.
+
 
 
    
