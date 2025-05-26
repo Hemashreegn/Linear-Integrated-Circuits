@@ -3,7 +3,7 @@
 ## EXPERIMENT - 04 {MULTISTABLE MONOVIBRATOR}
 
 ### OBJECTIVE
-  To design and analyze a current mirror circuit as an active load in a common-source amplifier. The experiment aims to study the effect of channel length (L) variations on the current mirror accuracy, output resistance, and voltage gain using LTspice simulations.
+   A monostable multivibrator generates a single output pulse of fixed duration in response to an external trigger. It has one stable state and temporarily switches to an unstable state before returning.
 
 ### DESIGN PARAMETERS
- A) Design and analyze current mirror circuit as active load in common source amplifier circuit.
+   To generate the waveform with pulse width of 0.5 ms using 555 Timer IC.
