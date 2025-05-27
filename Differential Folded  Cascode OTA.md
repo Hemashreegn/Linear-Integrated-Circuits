@@ -87,9 +87,9 @@ valuable in modern low-voltage CMOS technologies.
 - Cox = εox/tox = 8.42×10⁻³ F/m²  
 - kn′ = μnCox = 2.31×10⁻⁴ A/V²  
 - kp′ = μpCox = 9.74×10⁻⁵ A/V²  
-- Vov = 0.15V, VDD = 1.8V, Tail current = 40µA, L = 180nm, Vth = 0.465V
-
-*W = (2 × ID) / (kn × Vov²) × L*
+- Let Vov = 0.15V, VDD = 1.8V, Tail current = 40µA, L = 180nm, Vth = 0.465V
+  Using the below formula find ID, \
+    `*W = (2 × ID) / (kn × Vov²) × L*`
 
 | Transistor | Type  | ID (µA) | L (nm) | W (µm) |
 |------------|-------|---------|--------|--------|
@@ -100,7 +100,9 @@ valuable in modern low-voltage CMOS technologies.
 
 ### 2. Voltage Biasing
 
-- Vgs = Vth + Vov
+Let Vth = 0.465V, Vov = 0.15V 
+ Using the below formula find Vgs,\
+      `Vgs = Vth + Vov`
 
 | Transistor | Type   | Vgs/Vsg (V) |
 |------------|--------|--------------|
@@ -110,8 +112,6 @@ valuable in modern low-voltage CMOS technologies.
 | M5–M6      | PMOS   | 0.8          |
 | M7–M8      | NMOS   | 1.3          |
 | M9–M10     | NMOS   | 0.7          |
-
----
 
 ## IV. ANALYSIS OF DESIGNED OTA
 
@@ -156,8 +156,6 @@ valuable in modern low-voltage CMOS technologies.
 | Mirror Type           | NMOS Mirrors (M7–M10)           |
 | Gain Boosting         | Not used                        |
 | Design Style          | Hand-calculated, low Vov design |
-
----
 
 ## VI. CONCLUSION
 
